@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strconv"
 	"strings"
 
 	"github.com/charmbracelet/bubbles/list"
@@ -27,10 +28,27 @@ var viewportStyle = lipgloss.NewStyle().
 	BorderStyle(lipgloss.RoundedBorder()).
 	BorderForeground(lipgloss.Color("202")).
 	Margin(1, 2).
-	Padding(1, 1)
+	Padding(0, 1)
+
 var inactiveViewportStyle = lipgloss.NewStyle().
 	BorderStyle(lipgloss.RoundedBorder()).
 	Margin(1, 2).
+	Padding(0, 1)
+
+var usernameStyle = lipgloss.NewStyle().
+	Bold(true).
+	Italic(true).
+	Foreground(lipgloss.Color("#FAFAFA")).
+	Background(lipgloss.Color("#004B60")).
+	Margin(0, 0, 1, 0).
+	Padding(1, 2)
+
+var permissionsStyle = lipgloss.NewStyle().
+	// Bold(true).
+	// Italic(true).
+	Foreground(lipgloss.Color("#FAFAFA")).
+	Background(lipgloss.Color("#004B60")).
+	Margin(1, 0, 1, 0).
 	Padding(1, 1)
 
 type item struct {
@@ -58,7 +76,7 @@ const (
 )
 
 const (
-	columnKeyAction       = "actioon"
+	columnKeyAction       = "action"
 	columnKeyResourceType = "resource type"
 	columnKeyResource     = "resource"
 	columnKeyExplicit     = "explicit"
@@ -72,6 +90,7 @@ type model struct {
 	user                 stardog.User
 	userDetails          stardog.GetUserDetailsResponse
 	state                sessionState
+	columnSortKey        string
 }
 
 func (m model) Init() tea.Cmd {
@@ -82,7 +101,6 @@ func (m *model) updateUserDetailsTable(selectedUser string) {
 	m.user = stardog.User{Name: selectedUser}
 	m.userDetails = stardog.GetUserDetails(*connectionDetails, m.user)
 	userDetailsRow := []table.Row{table.NewRow(table.RowData{
-		columnKeyName:      m.user.Name,
 		columnKeyEnabled:   m.userDetails.Enabled,
 		columnKeySuperuser: m.userDetails.Superuser,
 		columnKeyRoles:     strings.Join(m.userDetails.Roles, ", "),
@@ -98,11 +116,11 @@ func (m *model) updateUserPermissionsTable(selectedUser string) {
 		rows = append(rows, table.NewRow(table.RowData{
 			columnKeyAction:       permission.Action,
 			columnKeyResourceType: permission.ResourceType,
-			columnKeyResource:     permission.Resource,
-			columnKeyExplicit:     permission.Explicit,
+			columnKeyResource:     strings.Join(permission.Resource, ", "),
+			columnKeyExplicit:     strconv.FormatBool(permission.Explicit),
 		}))
 	}
-	m.userPermissionsTable = m.userPermissionsTable.WithRows(rows)
+	m.userPermissionsTable = m.userPermissionsTable.WithRows(rows).Filtered(true).WithPageSize(15)
 }
 
 func (m *model) toggleActiveView() {
@@ -130,11 +148,13 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				m.toggleActiveView()
 			}
 		}
-		if m.state == listView {
-			m.list, cmd = m.list.Update(msg)
-			cmds = append(cmds, cmd)
-		}
 		if m.state == detailsView {
+
+			if msg.String() == "s" {
+				m.columnSortKey = columnKeyAction
+				m.userPermissionsTable = m.userPermissionsTable.SortByAsc(m.columnSortKey)
+			}
+
 			m.userDetailsTable, cmd = m.userDetailsTable.Update(msg)
 			cmds = append(cmds, cmd)
 
@@ -143,20 +163,33 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 			m.viewport, cmd = m.viewport.Update(msg)
 			cmds = append(cmds, cmd)
+
+			if m.list.SelectedItem() != nil {
+				selectedUser := m.list.SelectedItem().(item).title
+				m.updateUserDetailsTable(selectedUser)
+				m.updateUserPermissionsTable(selectedUser)
+
+				m.viewport.SetContent(lipgloss.JoinVertical(lipgloss.Left, usernameStyle.Render(selectedUser), m.userDetailsTable.View(), permissionsStyle.Render("Permissions"), m.userPermissionsTable.View()))
+			}
+
+			return m, tea.Batch(cmds...)
+
 		}
 
 	case tea.WindowSizeMsg:
-		// m.viewport.HighPerformanceRendering = true
 		h, v := listStyle.GetFrameSize()
 		m.list.SetSize(msg.Width-h, msg.Height-v)
-		m.viewport.Height = msg.Height - h
+		m.viewport.Height = msg.Height - v
 	}
+
+	m.list, cmd = m.list.Update(msg)
+	cmds = append(cmds, cmd)
 
 	if m.list.SelectedItem() != nil {
 		selectedUser := m.list.SelectedItem().(item).title
 		m.updateUserDetailsTable(selectedUser)
 		m.updateUserPermissionsTable(selectedUser)
-		m.viewport.SetContent(lipgloss.JoinVertical(lipgloss.Left, m.userDetailsTable.View(), m.userPermissionsTable.View()))
+		m.viewport.SetContent(lipgloss.JoinVertical(lipgloss.Left, usernameStyle.Render(selectedUser), m.userDetailsTable.View(), permissionsStyle.Render("Permissions"), m.userPermissionsTable.View()))
 	}
 
 	return m, tea.Batch(cmds...)
@@ -179,18 +212,17 @@ func main() {
 	}
 
 	userDetailTable := table.New([]table.Column{
-		table.NewColumn(columnKeyName, "Username", 10).WithFiltered(true),
-		table.NewColumn(columnKeyEnabled, "Enabled", 10).WithFiltered(true),
-		table.NewColumn(columnKeySuperuser, "Superuser", 10).WithFiltered(true),
-		table.NewColumn(columnKeyRoles, "Roles", 10).WithFiltered(true),
-	}).Focused(true)
+		table.NewColumn(columnKeyEnabled, "Enabled", 15),
+		table.NewColumn(columnKeySuperuser, "Superuser", 15),
+		table.NewFlexColumn(columnKeyRoles, "Roles", 30),
+	}).WithTargetWidth(80)
 
 	userPermissionsTable := table.New([]table.Column{
 		table.NewColumn(columnKeyAction, "Action", 10).WithFiltered(true),
 		table.NewColumn(columnKeyResourceType, "Resource Type", 20).WithFiltered(true),
 		table.NewColumn(columnKeyResource, "Resource", 30).WithFiltered(true),
 		table.NewColumn(columnKeyExplicit, "Explicit Permission", 20).WithFiltered(true),
-	}).Focused(true)
+	}).Focused(true).HighlightStyle(lipgloss.NewStyle().Background(lipgloss.Color("#004B60")))
 
 	theViewport := viewport.New(100, 40)
 	itemDelegate := list.NewDefaultDelegate()
