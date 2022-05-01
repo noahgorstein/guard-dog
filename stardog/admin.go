@@ -9,22 +9,22 @@ import (
 )
 
 type ConnectionDetails struct {
-	endpoint string
-	username string
-	password string
+	Endpoint string
+	Username string
+	Password string
 }
 
 func NewConnectionDetails(endpoint string, username string, password string) *ConnectionDetails {
 	admin := ConnectionDetails{
-		endpoint: endpoint,
-		username: username,
-		password: password,
+		Endpoint: endpoint,
+		Username: username,
+		Password: password,
 	}
 	return &admin
 }
 
 func Alive(connectionDetails ConnectionDetails) bool {
-	url := connectionDetails.endpoint + "/admin/alive"
+	url := connectionDetails.Endpoint + "/admin/alive"
 	request, err := http.NewRequest(
 		http.MethodGet,
 		url,
@@ -34,7 +34,7 @@ func Alive(connectionDetails ConnectionDetails) bool {
 		log.Printf("Could not make request %v", err)
 	}
 	request.Header.Add("Accept", "application/json")
-	request.SetBasicAuth(connectionDetails.username, connectionDetails.password)
+	request.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
 
 	response, err := http.DefaultClient.Do(request)
 	if err != nil {
@@ -53,7 +53,7 @@ type User struct {
 }
 
 func GetUsers(connectionDetails ConnectionDetails) []User {
-	url := connectionDetails.endpoint + "/admin/users"
+	url := connectionDetails.Endpoint + "/admin/users"
 	request, err := http.NewRequest(
 		http.MethodGet,
 		url,
@@ -63,7 +63,7 @@ func GetUsers(connectionDetails ConnectionDetails) []User {
 		log.Printf("Could not make request %v", err)
 	}
 	request.Header.Add("Accept", "application/json")
-	request.SetBasicAuth(connectionDetails.username, connectionDetails.password)
+	request.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
 
 	response, err := http.DefaultClient.Do(request)
 	if err != nil {
@@ -101,7 +101,7 @@ type GetUserDetailsResponse struct {
 }
 
 func GetUserDetails(connectionDetails ConnectionDetails, user User) GetUserDetailsResponse {
-	url := connectionDetails.endpoint + "/admin/users/" + user.Name
+	url := connectionDetails.Endpoint + "/admin/users/" + user.Name
 	request, err := http.NewRequest(
 		http.MethodGet,
 		url,
@@ -111,7 +111,7 @@ func GetUserDetails(connectionDetails ConnectionDetails, user User) GetUserDetai
 		log.Printf("Could not make request %v", err)
 	}
 	request.Header.Add("Accept", "application/json")
-	request.SetBasicAuth(connectionDetails.username, connectionDetails.password)
+	request.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
 
 	response, err := http.DefaultClient.Do(request)
 	if err != nil {
