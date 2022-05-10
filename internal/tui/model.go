@@ -6,7 +6,10 @@ import (
 	"github.com/charmbracelet/lipgloss"
 	"github.com/evertras/bubble-table/table"
 	"github.com/noahgorstein/stardog-go/stardog"
+	"github.com/spf13/viper"
 )
+
+var server string
 
 type activeView int
 
@@ -39,7 +42,6 @@ type Bubble struct {
 	viewport             viewport.Model
 	user                 stardog.User
 	userDetails          stardog.GetUserDetailsResponse
-	endpoint             string
 	activeView           activeView
 	columnSortKey        string
 	statusBar            string
@@ -59,7 +61,13 @@ func (i item) FilterValue() string { return i.title }
 // New creates a new instance of the UI.
 func New() Bubble {
 
-	stardogConnection := stardog.NewConnectionDetails("http://localhost:5820", "admin", "admin")
+	if viper.GetViper().GetString("SERVER_ADDRESS") != "" {
+		server = viper.GetViper().GetString("SERVER_ADDRESS")
+	} else {
+		server = "http://localhost:5821"
+	}
+
+	stardogConnection := stardog.NewConnectionDetails(server, "admin", "admin")
 	users := stardog.GetUsers(*stardogConnection)
 
 	items := []list.Item{}
@@ -74,11 +82,16 @@ func New() Bubble {
 	})
 
 	userPermissionsTable := table.New([]table.Column{
-		table.NewColumn(columnKeyAction, "Action", 10).WithFiltered(true),
-		table.NewColumn(columnKeyResourceType, "Resource Type", 20).WithFiltered(true),
-		table.NewFlexColumn(columnKeyResource, "Resource", 1).WithFiltered(true),
-		table.NewColumn(columnKeyExplicit, "Explicit Permission", 20).WithFiltered(true),
-	}).Focused(true).HighlightStyle(lipgloss.NewStyle().Background(lipgloss.Color("#004B60")))
+		table.NewColumn(columnKeyAction, "Action", 10),
+		table.NewColumn(columnKeyResourceType, "Resource Type", 20),
+		table.NewFlexColumn(columnKeyResource, "Resource", 1),
+		table.NewColumn(columnKeyExplicit, "Explicit Permission", 20),
+	}).Focused(true).SelectableRows(true).WithStaticFooter("Footer!").WithBaseStyle(
+		lipgloss.NewStyle().
+			BorderForeground(lipgloss.Color("#a38")).
+			Foreground(lipgloss.Color("#a7a")).
+			Align(lipgloss.Left),
+	)
 
 	itemDelegate := list.NewDefaultDelegate()
 	itemDelegate.Styles.SelectedTitle.Foreground(lipgloss.Color("202"))

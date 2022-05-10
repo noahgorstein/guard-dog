@@ -1,20 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"os"
-
-	tea "github.com/charmbracelet/bubbletea"
-	"github.com/noahgorstein/stardog-go/internal/tui"
-)
+import "github.com/noahgorstein/stardog-go/cmd"
 
 func main() {
-
-	bubble := tui.New()
-	p := tea.NewProgram(bubble, tea.WithAltScreen())
-
-	if err := p.Start(); err != nil {
-		fmt.Println("Error running program:", err)
-		os.Exit(1)
-	}
+	cmd.Execute()
 }

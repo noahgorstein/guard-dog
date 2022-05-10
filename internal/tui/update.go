@@ -1,6 +1,7 @@
 package tui
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 
@@ -12,25 +13,16 @@ import (
 	"github.com/noahgorstein/stardog-go/stardog"
 )
 
+var (
+	f, _ = tea.LogToFile("debug.log", "debug")
+)
+
 func (b *Bubble) toggleActiveView() {
 	if b.activeView == listView {
 		b.activeView = detailsView
 	} else {
 		b.activeView = listView
 	}
-}
-
-func (b *Bubble) selectedUserPermissions() string {
-	selectedUser := b.list.SelectedItem().(item).title
-	b.updateUserDetailsTable(selectedUser)
-	b.updateUserPermissionsTable(selectedUser)
-
-	return lipgloss.JoinVertical(
-		lipgloss.Left,
-		usernameStyle.Render(selectedUser),
-		b.userDetailsTable.View(),
-		permissionsStyle.Render("Permissions"),
-		b.userPermissionsTable.View())
 }
 
 func (b *Bubble) updateUserDetailsTable(selectedUser string) {
@@ -57,7 +49,45 @@ func (b *Bubble) updateUserPermissionsTable(selectedUser string) {
 			columnKeyExplicit:     strconv.FormatBool(permission.Explicit),
 		}))
 	}
-	b.userPermissionsTable = b.userPermissionsTable.WithRows(rows).Filtered(true).WithPageSize(15).WithTargetWidth(b.viewport.Width - 5)
+
+	b.userPermissionsTable = table.New([]table.Column{
+		table.NewColumn(columnKeyAction, "Action", 10).WithFiltered(true),
+		table.NewColumn(columnKeyResourceType, "Resource Type", 20).WithFiltered(true),
+		table.NewFlexColumn(columnKeyResource, "Resource", 1).WithFiltered(true),
+		table.NewColumn(columnKeyExplicit, "Explicit Permission", 20).WithFiltered(true),
+	}).Focused(true).SelectableRows(true).WithBaseStyle(
+		lipgloss.NewStyle().
+			BorderForeground(lipgloss.Color("#a38")).
+			Foreground(lipgloss.Color("#a7a")).
+			Align(lipgloss.Left),
+	).WithRows(rows).WithTargetWidth(b.viewport.Width - 5).Filtered(true)
+
+}
+
+func (b *Bubble) updateUserPermissionsTableFooter() {
+
+	highlightedRow := b.userPermissionsTable.HighlightedRow().Data
+	f.WriteString(fmt.Sprintf("HIGHLIGHTED ROW: %s", highlightedRow) + "\n")
+
+	selectedText := strings.Builder{}
+	selectedIDs := []string{}
+
+	for _, row := range b.userPermissionsTable.SelectedRows() {
+		selectedIDs = append(selectedIDs, row.Data[columnKeyAction].(string))
+	}
+
+	selectedText.WriteString(fmt.Sprintf("SelectedIDs: %s\n", strings.Join(selectedIDs, ", ")))
+
+	footerText := fmt.Sprintf(
+		"Pg. %d/%d - Currently looking at ID: %s - selected: %s",
+		b.userPermissionsTable.CurrentPage(),
+		b.userPermissionsTable.MaxPages(),
+		highlightedRow,
+		selectedText.String(),
+	)
+
+	b.userPermissionsTable = b.userPermissionsTable.WithStaticFooter(footerText)
+
 }
 
 func (b *Bubble) updateStatusBar() {
@@ -88,7 +118,8 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				b.toggleActiveView()
 			}
 		}
-		if b.activeView == detailsView {
+		switch b.activeView {
+		case detailsView:
 
 			if msg.String() == "s" {
 				b.columnSortKey = columnKeyAction
@@ -104,14 +135,47 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			b.viewport, cmd = b.viewport.Update(msg)
 			cmds = append(cmds, cmd)
 
+			selectedUser := b.list.SelectedItem().(item).title
+			b.updateUserPermissionsTableFooter()
+
 			if b.list.SelectedItem() != nil {
-				b.viewport.SetContent(b.selectedUserPermissions())
+				b.viewport.SetContent(lipgloss.JoinVertical(
+					lipgloss.Left,
+					usernameStyle.Render(selectedUser),
+					b.userDetailsTable.View(),
+					permissionsStyle.Render("Permissions"),
+					b.userPermissionsTable.View()))
 			}
 
 			return b, tea.Batch(cmds...)
+		case listView:
+			f.WriteString("In list view! \n")
 
+			b.list, cmd = b.list.Update(msg)
+			cmds = append(cmds, cmd)
+
+			if b.list.FilterState() == list.FilterApplied ||
+				b.list.FilterState() == list.Filtering ||
+				b.list.FilterState() == list.Unfiltered {
+				b.viewport = viewport.New(b.width-lipgloss.Width(b.list.View())-listStyle.GetWidth(), b.list.Height())
+			}
+
+			if b.list.SelectedItem() != nil {
+				selectedUser := b.list.SelectedItem().(item).title
+				b.updateUserDetailsTable(selectedUser)
+				b.updateUserPermissionsTable(selectedUser)
+				// b.updateUserPermissionsTableFooter()
+
+				b.viewport.SetContent(lipgloss.JoinVertical(
+					lipgloss.Left,
+					usernameStyle.Render(selectedUser),
+					b.userDetailsTable.View(),
+					permissionsStyle.Render("Permissions"),
+					b.userPermissionsTable.View()))
+
+			}
+			return b, tea.Batch(cmds...)
 		}
-
 	case tea.WindowSizeMsg:
 		b.width, b.height = msg.Width, msg.Height
 		listV, _ := listStyle.GetFrameSize()
@@ -120,26 +184,46 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		b.list.SetSize(int(float64(msg.Width)*0.3), msg.Height-listV-statusBarV-statusBarStyle.GetHeight())
 		b.viewport = viewport.New(msg.Width-lipgloss.Width(b.list.View())-listStyle.GetWidth(), b.list.Height())
 
+		b.list, cmd = b.list.Update(msg)
+		cmds = append(cmds, cmd)
+
 		if b.list.SelectedItem() != nil {
-			b.viewport.SetContent(b.selectedUserPermissions())
+			selectedUser := b.list.SelectedItem().(item).title
+			b.updateUserDetailsTable(selectedUser)
+			b.updateUserPermissionsTable(selectedUser)
+			// b.updateUserPermissionsTableFooter()
+
+			b.viewport.SetContent(lipgloss.JoinVertical(
+				lipgloss.Left,
+				usernameStyle.Render(selectedUser),
+				b.userDetailsTable.View(),
+				permissionsStyle.Render("Permissions"),
+				b.userPermissionsTable.View()))
 		}
 
 		b.updateStatusBar()
+		return b, tea.Batch(cmds...)
 
-	}
+	default:
+		b.list, cmd = b.list.Update(msg)
+		cmds = append(cmds, cmd)
 
-	if b.list.FilterState() == list.FilterApplied ||
-		b.list.FilterState() == list.Filtering ||
-		b.list.FilterState() == list.Unfiltered {
-		b.viewport = viewport.New(b.width-lipgloss.Width(b.list.View())-listStyle.GetWidth(), b.list.Height())
+		b.userDetailsTable, cmd = b.userDetailsTable.Update(msg)
+		cmds = append(cmds, cmd)
+
+		b.userPermissionsTable, cmd = b.userPermissionsTable.Update(msg)
+		cmds = append(cmds, cmd)
+
+		return b, tea.Batch(cmds...)
 	}
 
 	b.list, cmd = b.list.Update(msg)
 	cmds = append(cmds, cmd)
 
-	if b.list.SelectedItem() != nil {
-		b.viewport.SetContent(b.selectedUserPermissions())
-	}
+	b.userDetailsTable, cmd = b.userDetailsTable.Update(msg)
+	cmds = append(cmds, cmd)
 
+	b.userPermissionsTable, cmd = b.userPermissionsTable.Update(msg)
+	cmds = append(cmds, cmd)
 	return b, tea.Batch(cmds...)
 }
