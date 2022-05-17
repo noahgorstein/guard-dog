@@ -128,3 +128,27 @@ func GetUserDetails(connectionDetails ConnectionDetails, user User) GetUserDetai
 	}
 	return result
 }
+
+// func DeleteUserPermission(connectionDetails ConnectionDetails, user User) {
+// 	url := connectionDetails.Endpoint + "/admin/permissions/user/" + user.Name + "/delete"
+// 	request, err := http.NewRequest(
+// 		http.MethodGet,
+// 		url,
+// 		nil,
+// 	)
+// 	if err != nil {
+// 		log.Printf("Could not make request %v", err)
+// 	}
+// 	request.Header.Add("Accept", "application/json")
+// 	request.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
+
+// 	response, err := http.DefaultClient.Post(request)
+// 	if err != nil {
+// 		log.Printf("Could not make a request: %v", err)
+// 	}
+
+// 	body, err := ioutil.ReadAll(response.Body)
+// 	if err != nil {
+// 		log.Printf("Could not read response body - %v", err)
+// 	}
+// }

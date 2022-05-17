@@ -5,8 +5,8 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/evertras/bubble-table/table"
+	"github.com/noahgorstein/stardog-go/internal/config"
 	"github.com/noahgorstein/stardog-go/stardog"
-	"github.com/spf13/viper"
 )
 
 var server string
@@ -59,15 +59,9 @@ func (i item) Description() string { return i.desc }
 func (i item) FilterValue() string { return i.title }
 
 // New creates a new instance of the UI.
-func New() Bubble {
+func New(config config.Config) Bubble {
 
-	if viper.GetViper().GetString("SERVER_ADDRESS") != "" {
-		server = viper.GetViper().GetString("SERVER_ADDRESS")
-	} else {
-		server = "http://localhost:5821"
-	}
-
-	stardogConnection := stardog.NewConnectionDetails(server, "admin", "admin")
+	stardogConnection := stardog.NewConnectionDetails(config.Endpoint, config.Username, config.Password)
 	users := stardog.GetUsers(*stardogConnection)
 
 	items := []list.Item{}
@@ -86,12 +80,7 @@ func New() Bubble {
 		table.NewColumn(columnKeyResourceType, "Resource Type", 20),
 		table.NewFlexColumn(columnKeyResource, "Resource", 1),
 		table.NewColumn(columnKeyExplicit, "Explicit Permission", 20),
-	}).Focused(true).SelectableRows(true).WithStaticFooter("Footer!").WithBaseStyle(
-		lipgloss.NewStyle().
-			BorderForeground(lipgloss.Color("#a38")).
-			Foreground(lipgloss.Color("#a7a")).
-			Align(lipgloss.Left),
-	)
+	})
 
 	itemDelegate := list.NewDefaultDelegate()
 	itemDelegate.Styles.SelectedTitle.Foreground(lipgloss.Color("202"))

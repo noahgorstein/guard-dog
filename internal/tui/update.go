@@ -55,12 +55,14 @@ func (b *Bubble) updateUserPermissionsTable(selectedUser string) {
 		table.NewColumn(columnKeyResourceType, "Resource Type", 20).WithFiltered(true),
 		table.NewFlexColumn(columnKeyResource, "Resource", 1).WithFiltered(true),
 		table.NewColumn(columnKeyExplicit, "Explicit Permission", 20).WithFiltered(true),
-	}).Focused(true).SelectableRows(true).WithBaseStyle(
-		lipgloss.NewStyle().
-			BorderForeground(lipgloss.Color("#a38")).
-			Foreground(lipgloss.Color("#a7a")).
-			Align(lipgloss.Left),
-	).WithRows(rows).WithTargetWidth(b.viewport.Width - 5).Filtered(true)
+	}).Focused(true).
+		SelectableRows(true).
+		WithBaseStyle(permissionsTableStyle).
+		HighlightStyle(permissionsTableHighltedRowStyle).
+		WithRows(rows).
+		WithTargetWidth(b.viewport.Width - 5).
+		WithPageSize(10).
+		Filtered(true)
 
 }
 

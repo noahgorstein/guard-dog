@@ -1,1610 +1,15 @@
-HIGHLIGHTED ROW ACTION: %!s(<nil>) 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: %!s(<nil>) 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: %!s(<nil>) 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-HIGHLIGHTED ROW ACTION: %!s(<nil>) 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: ALL 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: CREATE 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: WRITE 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW ACTION: READ 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-ROW: map[action:READ explicit:true resource:admin resource type:user] 
-ROW: map[action:ALL explicit:true resource:* resource type:*] 
-READHIGHLIGHTED ROW: READ
-In list view! 
-Resize that viewport 
-Out of the if 
-ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user] 
-READHIGHLIGHTED ROW: READ
-In list view! 
-Resize that viewport 
-Out of the if 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-WRITEHIGHLIGHTED ROW: WRITE
-In list view! 
-Resize that viewport 
-Out of the if 
-ROW: map[action:WRITE explicit:true resource:noah resource type:user] 
-ROW: map[action:READ explicit:true resource:noah resource type:user] 
-ROW: map[action:CREATE explicit:true resource:* resource type:db] 
-WRITEHIGHLIGHTED ROW: WRITE
-In list view! 
-Resize that viewport 
-Out of the if 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-READHIGHLIGHTED ROW: READ
-In list view! 
-Resize that viewport 
-Out of the if 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-READHIGHLIGHTED ROW: READ
-In list view! 
-Resize that viewport 
-Out of the if 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-READHIGHLIGHTED ROW: READ
-In list view! 
-Resize that viewport 
-Out of the if 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-READHIGHLIGHTED ROW: READ
-In list view! 
-Resize that viewport 
-Out of the if 
-ROW: map[action:READ explicit:true resource:anonymous resource type:user] 
-ROW: map[action:READ explicit:false resource:* resource type:*] 
-READHIGHLIGHTED ROW: READ
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
@@ -1617,1273 +22,735 @@ HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-DEFAULT CASE 
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:anonymous resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:false resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
 In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-DEFAULT CASE 
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
+In list view! 
+In list view! 
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newuser resource type:user]
+In list view! 
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:newuser resource type:user]
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://bricks2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://oracle2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://vg-test resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://vg-test resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://oracle2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://bricks2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:music resource type:icv-constraints]
 HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[]
-DEFAULT CASE 
-DEFAULT CASE 
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:edf-sem-ent-bus-prd resource type:role]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://bricks resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://bricks resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:named-graph]
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://bricks2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://oracle2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://oracle2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://bricks2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:music resource type:icv-constraints]
 HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-DEFAULT CASE 
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-DEFAULT CASE 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-In list view! 
-Resize that viewport 
-Out of the if 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:edf-sem-ent-bus-prd resource type:role]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://bricks resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://bricks resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:edf-sem-ent-bus-prd resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:music resource type:named-graph]
 HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
 HIGHLIGHTED ROW: map[action:ALL explicit:true resource:* resource type:*]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:edf-sem-ent-bus-prd resource type:role]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://bricks resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://bricks2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:data-source://bricks resource type:data-source]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://bricks resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://oracle resource type:data-source]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:edf-sem-ent-bus-prd resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars_demo resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://vg-test resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:admin resource type:user]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://bricks resource type:data-source]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://postgres resource type:data-source]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:edf-sem-ent-bus-prd resource type:role]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://oracle1 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://oracle1 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:data-source://oracle resource type:data-source]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://bricks resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:data-source://oracle resource type:data-source]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://oracle1 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://oracle1 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://oracle1 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://oracle1 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:data-source://oracle resource type:data-source]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://bricks resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:data-source://postgres resource type:data-source]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://oracle2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://postgres resource type:data-source]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:starwars_demo resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars_demo resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:starwars_demo resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:artist_network resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:edf-sem-ent-bus-prd resource type:role]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://oracle resource type:data-source]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:designerTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://employees resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:data-source://mysql resource type:data-source]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:music resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://bricks2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://oracle2 resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newDb resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://vg-test resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://employees resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:edf-sem-ent-bus-prd resource type:role]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:testMR_worker resource type:role]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://employees resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:virtual://vg-test resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:discovery_worker resource type:role]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars_demo resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:beatles resource type:named-graph]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:beer resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:designerTest resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:artist_network resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:newDb resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:bsbm100m resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:reasoningExampleTest resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:music resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:bsbm100m resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:starwars_demo resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:virtual://employees resource type:virtual-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:artist_network resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:music resource type:named-graph]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beer resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:movies resource type:named-graph]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:starwars_demo resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:data-source://oracle resource type:data-source]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:designerTest resource type:named-graph]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:somerole resource type:role]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:starwars_demo resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:starwars resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:movies resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:GRANT explicit:true resource:starwars resource type:named-graph]
+HIGHLIGHTED ROW: map[action:EXECUTE explicit:true resource:movies resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:db]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://postgres resource type:data-source]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:data-source://postgres resource type:data-source]
+HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:bsbm100m resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:newDb resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:reasoningExampleTest resource type:db]
+HIGHLIGHTED ROW: map[action:DELETE explicit:true resource:beatles resource type:icv-constraints]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
+HIGHLIGHTED ROW: map[action:REVOKE explicit:true resource:beer resource type:db]
 In list view! 
 In list view! 
 In list view! 
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
 In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:realllllllllllllllllllllllllllllllllllllllylongname. resource type:user]
-In list view! 
-In list view! 
-In list view! 
-In list view! 
-In list view! 
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:newuser resource type:user]
+HIGHLIGHTED ROW: map[action:READ explicit:true resource:newuser resource type:user]
 In list view! 
 In list view! 
 In list view! 
@@ -2892,13 +759,41 @@ In list view!
 In list view! 
 HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
 HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:CREATE explicit:true resource:* resource type:db]
-HIGHLIGHTED ROW: map[action:READ explicit:true resource:noah resource type:user]
 HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
+In list view! 
+In list view! 
+In list view! 
 HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
-debug 2022/05/08 16:08:55 Could not make a request: Get "http://localhost:5821/admin/users": dial tcp [::1]:5821: connect: connection refused
-debug 2022/05/08 16:10:24 Could not make a request: Get "http://localhost:5821/admin/users": dial tcp [::1]:5821: connect: connection refused
+In list view! 
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
+In list view! 
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
+In list view! 
+HIGHLIGHTED ROW: map[action:WRITE explicit:true resource:noah resource type:user]
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 
+In list view! 

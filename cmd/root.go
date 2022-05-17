@@ -1,81 +1,82 @@
-/*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
-
-*/
 package cmd
 
 import (
 	"fmt"
 	"os"
 
+	tea "github.com/charmbracelet/bubbletea"
+	homedir "github.com/mitchellh/go-homedir"
+	"github.com/noahgorstein/stardog-go/internal/config"
+	"github.com/noahgorstein/stardog-go/internal/tui"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-
-	tea "github.com/charmbracelet/bubbletea"
-	"github.com/noahgorstein/stardog-go/internal/tui"
 )
 
 var cfgFile string
 
-// rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "stardog-go",
-	Short: "A TUI for managing and viewing Stardog security",
+	Use: "sd-security",
+	Run: func(cmd *cobra.Command, args []string) {
+		cobra.OnInitialize(initConfig)
+
+		config := config.Config{
+			Endpoint: viper.GetString("endpoint"),
+			Username: viper.GetString("username"),
+			Password: viper.GetString("password"),
+		}
+
+		if config.Endpoint == "" {
+			config.Endpoint = "http://localhost:5820"
+		}
+		if config.Username == "" {
+			config.Username = "admin"
+		}
+		if config.Password == "" {
+			config.Password = "admin"
+		}
+
+		bubble := tui.New(config)
+		p := tea.NewProgram(bubble, tea.WithAltScreen())
+
+		if err := p.Start(); err != nil {
+			fmt.Println("Error running program:", err)
+			os.Exit(1)
+		}
+	},
 }
 
-// Execute adds all child commands to the root command and sets flags appropriately.
-// This is called by main.main(). It only needs to happen once to the rootCmd.
 func Execute() {
-	cobra.OnInitialize(initConfig)
-
 	err := rootCmd.Execute()
 	if err != nil {
-		os.Exit(1)
-	}
-
-	bubble := tui.New()
-	p := tea.NewProgram(bubble, tea.WithAltScreen())
-
-	if err := p.Start(); err != nil {
-		fmt.Println("Error running program:", err)
 		os.Exit(1)
 	}
 }
 
 func init() {
-	// Here you will define your flags and configuration settings.
-	// Cobra supports persistent flags, which, if defined here,
-	// will be global for your application.
-
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.stardog-go.yaml)")
-
-	// Cobra also supports local flags, which will only run
-	// when this action is called directly.
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	cobra.OnInitialize(initConfig)
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.stardog.yaml)")
 }
 
-// initConfig reads in config file and ENV variables if set.
 func initConfig() {
 	if cfgFile != "" {
 		// Use config file from the flag.
 		viper.SetConfigFile(cfgFile)
 	} else {
 		// Find home directory.
-		home, err := os.UserHomeDir()
-		cobra.CheckErr(err)
+		home, err := homedir.Dir()
+		if err != nil {
+			fmt.Println(err)
+			os.Exit(1)
+		}
 
-		// Search config in home directory with name ".stardog-go" (without extension).
+		// Search config in home directory with name ".stardog" (without extension).
 		viper.AddConfigPath(home)
-		viper.SetConfigType("yaml")
-		viper.SetConfigName(".stardog-go")
-		viper.BindEnv("SERVER_ADDRESS")
-
+		viper.SetConfigName(".stardog")
 	}
 
-	viper.AutomaticEnv() // read in environment variables that match
-
-	// If a config file is found, read it in.
-	if err := viper.ReadInConfig(); err == nil {
-		fmt.Fprintln(os.Stderr, "Using config file:", viper.ConfigFileUsed())
+	if err := viper.ReadInConfig(); err != nil {
+		fmt.Println("Can't read config:", err)
+		os.Exit(1)
 	}
+
 }

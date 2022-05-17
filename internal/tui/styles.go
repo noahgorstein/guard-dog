@@ -40,6 +40,15 @@ var (
 				Margin(1, 0, 1, 1).
 				Padding(1, 1)
 
+	permissionsTableStyle = lipgloss.NewStyle().
+				BorderForeground(lipgloss.Color("#FAFAFA")).
+				Foreground(lipgloss.Color("#FAFAFA")).
+				Align(lipgloss.Left)
+
+	permissionsTableHighltedRowStyle = lipgloss.NewStyle().
+						Background(lipgloss.Color("#FAFAFA")).
+						Foreground(lipgloss.Color("202"))
+
 	statusBarStyle = lipgloss.NewStyle().
 			Border(lipgloss.NormalBorder(), true)
 
