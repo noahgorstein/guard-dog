@@ -19,20 +19,14 @@ var rootCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		cobra.OnInitialize(initConfig)
 
+		viper.SetDefault("endpoint", "http://localhost:5820")
+		viper.SetDefault("username", "admin")
+		viper.SetDefault("password", "admin")
+
 		config := config.Config{
 			Endpoint: viper.GetString("endpoint"),
 			Username: viper.GetString("username"),
 			Password: viper.GetString("password"),
-		}
-
-		if config.Endpoint == "" {
-			config.Endpoint = "http://localhost:5820"
-		}
-		if config.Username == "" {
-			config.Username = "admin"
-		}
-		if config.Password == "" {
-			config.Password = "admin"
 		}
 
 		bubble := tui.New(config)
@@ -72,6 +66,7 @@ func initConfig() {
 		// Search config in home directory with name ".stardog" (without extension).
 		viper.AddConfigPath(home)
 		viper.SetConfigName(".stardog")
+		viper.SetConfigType("yaml")
 	}
 
 	if err := viper.ReadInConfig(); err != nil {

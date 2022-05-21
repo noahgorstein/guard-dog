@@ -1,6 +1,7 @@
 package stardog
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -15,12 +16,27 @@ type ConnectionDetails struct {
 }
 
 func NewConnectionDetails(endpoint string, username string, password string) *ConnectionDetails {
-	admin := ConnectionDetails{
+	connectionDetails := ConnectionDetails{
 		Endpoint: endpoint,
 		Username: username,
 		Password: password,
 	}
-	return &admin
+	return &connectionDetails
+}
+
+type Permission struct {
+	Action       string   `json:"action"`
+	ResourceType string   `json:"resource_type"`
+	Resource     []string `json:"resource"`
+}
+
+func NewPermission(action string, resource_type string, resource []string) *Permission {
+	permission := Permission{
+		Action:       action,
+		ResourceType: resource_type,
+		Resource:     resource,
+	}
+	return &permission
 }
 
 func Alive(connectionDetails ConnectionDetails) bool {
@@ -129,26 +145,29 @@ func GetUserDetails(connectionDetails ConnectionDetails, user User) GetUserDetai
 	return result
 }
 
-// func DeleteUserPermission(connectionDetails ConnectionDetails, user User) {
-// 	url := connectionDetails.Endpoint + "/admin/permissions/user/" + user.Name + "/delete"
-// 	request, err := http.NewRequest(
-// 		http.MethodGet,
-// 		url,
-// 		nil,
-// 	)
-// 	if err != nil {
-// 		log.Printf("Could not make request %v", err)
-// 	}
-// 	request.Header.Add("Accept", "application/json")
-// 	request.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
+func DeleteUserPermission(connectionDetails ConnectionDetails, user User, permission Permission) bool {
+	url := connectionDetails.Endpoint + "/admin/permissions/user/" + user.Name + "/delete"
+	payloadBuf := new(bytes.Buffer)
+	json.NewEncoder(payloadBuf).Encode(permission)
 
-// 	response, err := http.DefaultClient.Post(request)
-// 	if err != nil {
-// 		log.Printf("Could not make a request: %v", err)
-// 	}
+	req, err := http.NewRequest(http.MethodPost, url, payloadBuf)
+	if err != nil {
+		fmt.Println(err)
+		return false
+	}
+	req.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
 
-// 	body, err := ioutil.ReadAll(response.Body)
-// 	if err != nil {
-// 		log.Printf("Could not read response body - %v", err)
-// 	}
-// }
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("Errored when sending request to the server")
+		return false
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == 201 {
+		return true
+	} else {
+		return false
+	}
+}

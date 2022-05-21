@@ -1,6 +1,7 @@
 package tui
 
 import (
+	"github.com/charmbracelet/bubbles/help"
 	"github.com/charmbracelet/bubbles/list"
 	"github.com/charmbracelet/bubbles/viewport"
 	"github.com/charmbracelet/lipgloss"
@@ -8,8 +9,6 @@ import (
 	"github.com/noahgorstein/stardog-go/internal/config"
 	"github.com/noahgorstein/stardog-go/stardog"
 )
-
-var server string
 
 type activeView int
 
@@ -43,9 +42,10 @@ type Bubble struct {
 	user                 stardog.User
 	userDetails          stardog.GetUserDetailsResponse
 	activeView           activeView
-	columnSortKey        string
 	statusBar            string
 	connection           *stardog.ConnectionDetails
+	detailsKeys          detailsKeyMap
+	detailsHelp          help.Model
 }
 
 type item struct {
@@ -96,6 +96,8 @@ func New(config config.Config) Bubble {
 		userPermissionsTable: userPermissionsTable,
 		activeView:           listView,
 		connection:           stardogConnection,
+		detailsKeys:          detailsKeys,
+		detailsHelp:          help.New(),
 	}
 
 	b.list.Title = "Users"

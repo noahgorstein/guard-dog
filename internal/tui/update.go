@@ -1,7 +1,6 @@
 package tui
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 
@@ -66,31 +65,31 @@ func (b *Bubble) updateUserPermissionsTable(selectedUser string) {
 
 }
 
-func (b *Bubble) updateUserPermissionsTableFooter() {
+// func (b *Bubble) updateUserPermissionsTableFooter() {
 
-	highlightedRow := b.userPermissionsTable.HighlightedRow().Data
-	f.WriteString(fmt.Sprintf("HIGHLIGHTED ROW: %s", highlightedRow) + "\n")
+// 	highlightedRow := b.userPermissionsTable.HighlightedRow().Data
+// 	f.WriteString(fmt.Sprintf("HIGHLIGHTED ROW: %s", highlightedRow) + "\n")
 
-	selectedText := strings.Builder{}
-	selectedIDs := []string{}
+// 	selectedText := strings.Builder{}
+// 	selectedIDs := []string{}
 
-	for _, row := range b.userPermissionsTable.SelectedRows() {
-		selectedIDs = append(selectedIDs, row.Data[columnKeyAction].(string))
-	}
+// 	for _, row := range b.userPermissionsTable.SelectedRows() {
+// 		selectedIDs = append(selectedIDs, row.Data[columnKeyAction].(string))
+// 	}
 
-	selectedText.WriteString(fmt.Sprintf("SelectedIDs: %s\n", strings.Join(selectedIDs, ", ")))
+// 	selectedText.WriteString(fmt.Sprintf("SelectedIDs: %s\n", strings.Join(selectedIDs, ", ")))
 
-	footerText := fmt.Sprintf(
-		"Pg. %d/%d - Currently looking at ID: %s - selected: %s",
-		b.userPermissionsTable.CurrentPage(),
-		b.userPermissionsTable.MaxPages(),
-		highlightedRow,
-		selectedText.String(),
-	)
+// 	footerText := fmt.Sprintf(
+// 		"Pg. %d/%d - Currently looking at ID: %s - selected: %s",
+// 		b.userPermissionsTable.CurrentPage(),
+// 		b.userPermissionsTable.MaxPages(),
+// 		highlightedRow,
+// 		selectedText.String(),
+// 	)
 
-	b.userPermissionsTable = b.userPermissionsTable.WithStaticFooter(footerText)
+// 	b.userPermissionsTable = b.userPermissionsTable.WithStaticFooter(footerText)
 
-}
+// }
 
 func (b *Bubble) updateStatusBar() {
 	statusBarStyle.Width(lipgloss.Width(b.list.View()) + lipgloss.Width(b.viewport.View()) + listStyle.GetHorizontalFrameSize() + viewportStyle.GetHorizontalFrameSize() - statusBarStyle.GetHorizontalFrameSize())
@@ -115,18 +114,14 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		if msg.String() == "ctrl+c" {
 			return b, tea.Quit
 		}
+
 		if b.list.FilterState() != list.Filtering {
-			if msg.String() == "b" {
+			if msg.String() == "tab" {
 				b.toggleActiveView()
 			}
 		}
 		switch b.activeView {
 		case detailsView:
-
-			if msg.String() == "s" {
-				b.columnSortKey = columnKeyAction
-				b.userPermissionsTable = b.userPermissionsTable.SortByAsc(b.columnSortKey)
-			}
 
 			b.userDetailsTable, cmd = b.userDetailsTable.Update(msg)
 			cmds = append(cmds, cmd)
@@ -137,8 +132,42 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			b.viewport, cmd = b.viewport.Update(msg)
 			cmds = append(cmds, cmd)
 
+			f.WriteString("FILTER ACTIVE: " + strconv.FormatBool(b.userPermissionsTable.GetIsFilterActive()) + "\n")
+			f.WriteString("CURRENT FILTER: " + b.userPermissionsTable.GetCurrentFilter() + "\n")
+
+			for _, row := range b.userPermissionsTable.GetVisibleRows() {
+				f.WriteString(row.Data[columnKeyAction].(string))
+			}
+
+			if !b.userPermissionsTable.GetIsFilterActive() {
+
+				if msg.String() == b.detailsKeys.ShowFullHelp.Help().Key {
+					b.detailsHelp.ShowAll = !b.detailsHelp.ShowAll
+				}
+
+				if msg.String() == b.detailsKeys.Refresh.Help().Key {
+					f.WriteString("trying to refresh \n")
+					selectedUser := b.list.SelectedItem().(item).title
+					b.updateUserDetailsTable(selectedUser)
+					b.updateUserPermissionsTable(selectedUser)
+				}
+
+				if msg.String() == b.detailsKeys.Delete.Help().Key {
+					selectedUser := b.list.SelectedItem().(item).title
+					user := stardog.User{Name: selectedUser}
+
+					for _, row := range b.userPermissionsTable.SelectedRows() {
+						permission := stardog.NewPermission(
+							row.Data[columnKeyAction].(string),
+							row.Data[columnKeyResourceType].(string),
+							[]string{row.Data[columnKeyResource].(string)})
+						stardog.DeleteUserPermission(*b.connection, user, *permission)
+					}
+					b.updateUserPermissionsTable(selectedUser)
+				}
+			}
+
 			selectedUser := b.list.SelectedItem().(item).title
-			b.updateUserPermissionsTableFooter()
 
 			if b.list.SelectedItem() != nil {
 				b.viewport.SetContent(lipgloss.JoinVertical(
@@ -146,12 +175,12 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 					usernameStyle.Render(selectedUser),
 					b.userDetailsTable.View(),
 					permissionsStyle.Render("Permissions"),
-					b.userPermissionsTable.View()))
+					b.userPermissionsTable.View(),
+					b.detailsHelp.View(b.detailsKeys)))
 			}
 
 			return b, tea.Batch(cmds...)
 		case listView:
-			f.WriteString("In list view! \n")
 
 			b.list, cmd = b.list.Update(msg)
 			cmds = append(cmds, cmd)
@@ -173,7 +202,8 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 					usernameStyle.Render(selectedUser),
 					b.userDetailsTable.View(),
 					permissionsStyle.Render("Permissions"),
-					b.userPermissionsTable.View()))
+					b.userPermissionsTable.View(),
+					b.detailsHelp.View(b.detailsKeys)))
 
 			}
 			return b, tea.Batch(cmds...)
@@ -200,7 +230,9 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				usernameStyle.Render(selectedUser),
 				b.userDetailsTable.View(),
 				permissionsStyle.Render("Permissions"),
-				b.userPermissionsTable.View()))
+				b.userPermissionsTable.View(),
+				b.detailsHelp.View(b.detailsKeys)))
+			b.detailsHelp.Width = b.viewport.Width
 		}
 
 		b.updateStatusBar()
@@ -218,6 +250,7 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 		return b, tea.Batch(cmds...)
 	}
+	f.WriteString("at the bottom \n")
 
 	b.list, cmd = b.list.Update(msg)
 	cmds = append(cmds, cmd)
