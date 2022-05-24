@@ -171,3 +171,59 @@ func DeleteUserPermission(connectionDetails ConnectionDetails, user User, permis
 		return false
 	}
 }
+
+type Credentials struct {
+	Username string   `json:"username"`
+	Password []string `json:"password"`
+}
+
+func AddUser(connectionDetails ConnectionDetails, credentials Credentials) bool {
+	url := connectionDetails.Endpoint + "/admin/users"
+	payloadBuf := new(bytes.Buffer)
+	json.NewEncoder(payloadBuf).Encode(credentials)
+
+	req, err := http.NewRequest(http.MethodPost, url, payloadBuf)
+	if err != nil {
+		fmt.Println(err)
+		return false
+	}
+	req.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("Errored when sending request to the server")
+		return false
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == 201 {
+		return true
+	} else {
+		return false
+	}
+}
+
+func DeleteUser(connectionDetails ConnectionDetails, user User) bool {
+	url := connectionDetails.Endpoint + "/admin/users/" + user.Name
+
+	req, err := http.NewRequest(http.MethodDelete, url, nil)
+	if err != nil {
+		return false
+	}
+	req.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("Errored when sending request to the server")
+		return false
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == 204 {
+		return true
+	} else {
+		return false
+	}
+}

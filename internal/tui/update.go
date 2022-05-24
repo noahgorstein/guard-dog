@@ -65,34 +65,9 @@ func (b *Bubble) updateUserPermissionsTable(selectedUser string) {
 
 }
 
-// func (b *Bubble) updateUserPermissionsTableFooter() {
-
-// 	highlightedRow := b.userPermissionsTable.HighlightedRow().Data
-// 	f.WriteString(fmt.Sprintf("HIGHLIGHTED ROW: %s", highlightedRow) + "\n")
-
-// 	selectedText := strings.Builder{}
-// 	selectedIDs := []string{}
-
-// 	for _, row := range b.userPermissionsTable.SelectedRows() {
-// 		selectedIDs = append(selectedIDs, row.Data[columnKeyAction].(string))
-// 	}
-
-// 	selectedText.WriteString(fmt.Sprintf("SelectedIDs: %s\n", strings.Join(selectedIDs, ", ")))
-
-// 	footerText := fmt.Sprintf(
-// 		"Pg. %d/%d - Currently looking at ID: %s - selected: %s",
-// 		b.userPermissionsTable.CurrentPage(),
-// 		b.userPermissionsTable.MaxPages(),
-// 		highlightedRow,
-// 		selectedText.String(),
-// 	)
-
-// 	b.userPermissionsTable = b.userPermissionsTable.WithStaticFooter(footerText)
-
-// }
-
 func (b *Bubble) updateStatusBar() {
-	statusBarStyle.Width(lipgloss.Width(b.list.View()) + lipgloss.Width(b.viewport.View()) + listStyle.GetHorizontalFrameSize() + viewportStyle.GetHorizontalFrameSize() - statusBarStyle.GetHorizontalFrameSize())
+	// statusBarStyle.Width(lipgloss.Width(b.list.View()) + lipgloss.Width(b.viewport.View()) + listStyle.GetHorizontalFrameSize() + viewportStyle.GetHorizontalFrameSize() - statusBarStyle.GetHorizontalFrameSize())
+	statusBarStyle.Width(b.width - statusBarStyle.GetHorizontalFrameSize())
 	b.statusBar = statusBarStyle.Render(
 		lipgloss.JoinHorizontal(
 			lipgloss.Center,
@@ -100,6 +75,21 @@ func (b *Bubble) updateStatusBar() {
 			"@",
 			b.connection.Endpoint,
 		))
+}
+
+func (b *Bubble) generateViewportContent() string {
+	selectedUser := b.list.SelectedItem().(item).title
+
+	return lipgloss.NewStyle().
+		Width(b.viewport.Width - b.viewport.Style.GetHorizontalFrameSize()).
+		Height(b.viewport.Height).
+		Render(lipgloss.JoinVertical(
+			lipgloss.Left,
+			usernameStyle.Render(selectedUser),
+			b.userDetailsTable.View(),
+			permissionsStyle.Render("Permissions"),
+			b.userPermissionsTable.View(),
+			b.detailsHelp.View(b.detailsKeys)))
 }
 
 func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
@@ -167,16 +157,18 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				}
 			}
 
-			selectedUser := b.list.SelectedItem().(item).title
+			// selectedUser := b.list.SelectedItem().(item).title
 
 			if b.list.SelectedItem() != nil {
-				b.viewport.SetContent(lipgloss.JoinVertical(
-					lipgloss.Left,
-					usernameStyle.Render(selectedUser),
-					b.userDetailsTable.View(),
-					permissionsStyle.Render("Permissions"),
-					b.userPermissionsTable.View(),
-					b.detailsHelp.View(b.detailsKeys)))
+				b.viewport.SetContent(b.generateViewportContent())
+
+				// b.viewport.SetContent(lipgloss.JoinVertical(
+				// 	lipgloss.Left,
+				// 	usernameStyle.Render(selectedUser),
+				// 	b.userDetailsTable.View(),
+				// 	permissionsStyle.Render("Permissions"),
+				// 	b.userPermissionsTable.View(),
+				// 	b.detailsHelp.View(b.detailsKeys)))
 			}
 
 			return b, tea.Batch(cmds...)
@@ -188,7 +180,9 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			if b.list.FilterState() == list.FilterApplied ||
 				b.list.FilterState() == list.Filtering ||
 				b.list.FilterState() == list.Unfiltered {
-				b.viewport = viewport.New(b.width-lipgloss.Width(b.list.View())-listStyle.GetWidth(), b.list.Height())
+				// b.viewport = viewport.New(b.width-lipgloss.Width(b.list.View())-listStyle.GetWidth(), b.list.Height())
+				b.viewport = viewport.New(b.width-listStyle.GetWidth()-listStyle.GetVerticalFrameSize()-viewportStyle.GetVerticalFrameSize(), b.list.Height())
+
 			}
 
 			if b.list.SelectedItem() != nil {
@@ -197,13 +191,14 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				b.updateUserPermissionsTable(selectedUser)
 				// b.updateUserPermissionsTableFooter()
 
-				b.viewport.SetContent(lipgloss.JoinVertical(
-					lipgloss.Left,
-					usernameStyle.Render(selectedUser),
-					b.userDetailsTable.View(),
-					permissionsStyle.Render("Permissions"),
-					b.userPermissionsTable.View(),
-					b.detailsHelp.View(b.detailsKeys)))
+				// b.viewport.SetContent(lipgloss.JoinVertical(
+				// 	lipgloss.Left,
+				// 	usernameStyle.Render(selectedUser),
+				// 	b.userDetailsTable.View(),
+				// 	permissionsStyle.Render("Permissions"),
+				// 	b.userPermissionsTable.View(),
+				// 	b.detailsHelp.View(b.detailsKeys)))
+				b.viewport.SetContent(b.generateViewportContent())
 
 			}
 			return b, tea.Batch(cmds...)
@@ -213,8 +208,11 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		listV, _ := listStyle.GetFrameSize()
 		statusBarV, _ := statusBarStyle.GetFrameSize()
 
-		b.list.SetSize(int(float64(msg.Width)*0.3), msg.Height-listV-statusBarV-statusBarStyle.GetHeight())
-		b.viewport = viewport.New(msg.Width-lipgloss.Width(b.list.View())-listStyle.GetWidth(), b.list.Height())
+		b.list.SetSize(int(float64(msg.Width)*0.5), msg.Height-listV-statusBarV-statusBarStyle.GetHeight())
+		listStyle = listStyle.Width(b.list.Width())
+		b.viewport.Width = b.width - b.viewport.Style.GetHorizontalFrameSize()
+		b.viewport.Height = b.list.Height()
+		// b.viewport = viewport.New(b.width-listStyle.GetWidth()-listStyle.GetVerticalFrameSize()-viewportStyle.GetVerticalFrameSize(), b.list.Height())
 
 		b.list, cmd = b.list.Update(msg)
 		cmds = append(cmds, cmd)
@@ -223,15 +221,16 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			selectedUser := b.list.SelectedItem().(item).title
 			b.updateUserDetailsTable(selectedUser)
 			b.updateUserPermissionsTable(selectedUser)
-			// b.updateUserPermissionsTableFooter()
 
-			b.viewport.SetContent(lipgloss.JoinVertical(
-				lipgloss.Left,
-				usernameStyle.Render(selectedUser),
-				b.userDetailsTable.View(),
-				permissionsStyle.Render("Permissions"),
-				b.userPermissionsTable.View(),
-				b.detailsHelp.View(b.detailsKeys)))
+			// b.viewport.SetContent(lipgloss.JoinVertical(
+			// 	lipgloss.Left,
+			// 	usernameStyle.Render(selectedUser),
+			// 	b.userDetailsTable.View(),
+			// 	permissionsStyle.Render("Permissions"),
+			// 	b.userPermissionsTable.View(),
+			// 	b.detailsHelp.View(b.detailsKeys)))
+			b.viewport.SetContent(b.generateViewportContent())
+
 			b.detailsHelp.Width = b.viewport.Width
 		}
 

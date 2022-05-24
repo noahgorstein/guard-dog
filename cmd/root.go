@@ -7,7 +7,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/noahgorstein/stardog-go/internal/config"
-	"github.com/noahgorstein/stardog-go/internal/tui"
+	tuiv2 "github.com/noahgorstein/stardog-go/internal/tuiV2"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -29,7 +29,9 @@ var rootCmd = &cobra.Command{
 			Password: viper.GetString("password"),
 		}
 
-		bubble := tui.New(config)
+		// bubble := tui.New(config)
+		// p := tea.NewProgram(bubble, tea.WithAltScreen())
+		bubble := tuiv2.New(config)
 		p := tea.NewProgram(bubble, tea.WithAltScreen())
 
 		if err := p.Start(); err != nil {

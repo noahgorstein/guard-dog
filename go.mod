@@ -3,7 +3,7 @@ module github.com/noahgorstein/stardog-go
 go 1.18
 
 require (
-	github.com/evertras/bubble-table v0.11.2
+	github.com/evertras/bubble-table v0.12.0
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/viper v1.7.0
 )
