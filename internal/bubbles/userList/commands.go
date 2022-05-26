@@ -11,10 +11,10 @@ import (
 
 type GetStardogUsersMsg []list.Item
 
-func GetStardogUsersCmd(connectionDetails stardog.ConnectionDetails) tea.Cmd {
+func (b *Bubble) GetStardogUsersCmd() tea.Cmd {
 	return func() tea.Msg {
 		var items []list.Item
-		users := stardog.GetUsers(connectionDetails)
+		users := stardog.GetUsers(b.connection)
 		for _, user := range users {
 			items = append(items, item{title: user.Name, desc: ""})
 		}
@@ -36,6 +36,15 @@ func (b *Bubble) CreateStardogCmd(username, password string) tea.Cmd {
 func (b *Bubble) DeleteStardogUserCmd(username string) tea.Cmd {
 	return func() tea.Msg {
 		stardog.DeleteUser(b.connection, stardog.User{Name: username})
+		return nil
+	}
+}
+
+func (b *Bubble) ChangeUserPasswordCmd(username, password string) tea.Cmd {
+	return func() tea.Msg {
+		password := stardog.NewPassword(password)
+		user := stardog.NewUser(username)
+		stardog.ChangeUserPassword(b.connection, user, password)
 		return nil
 	}
 }

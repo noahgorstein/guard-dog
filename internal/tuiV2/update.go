@@ -3,7 +3,6 @@ package tuiv2
 import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	userlist "github.com/noahgorstein/stardog-go/internal/bubbles/userList"
 	"github.com/noahgorstein/stardog-go/stardog"
 )
 
@@ -63,7 +62,7 @@ func (b Bubble) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 			switch msg.String() {
 			case "ctrl+r":
-				cmd = userlist.GetStardogUsersCmd(b.stardogConnection)
+				cmd = b.userList.GetStardogUsersCmd()
 				cmds = append(cmds, cmd)
 			}
 

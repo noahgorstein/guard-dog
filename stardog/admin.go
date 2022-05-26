@@ -60,12 +60,12 @@ func Alive(connectionDetails ConnectionDetails) bool {
 	return response.StatusCode == 200
 }
 
-type getUsersResponse struct {
-	Users []string `json:"users"`
-}
-
 type User struct {
 	Name string
+}
+
+type getUsersResponse struct {
+	Users []string `json:"users"`
 }
 
 func GetUsers(connectionDetails ConnectionDetails) []User {
@@ -222,6 +222,44 @@ func DeleteUser(connectionDetails ConnectionDetails, user User) bool {
 	defer resp.Body.Close()
 
 	if resp.StatusCode == 204 {
+		return true
+	} else {
+		return false
+	}
+}
+
+type Password struct {
+	Password string `json:"password"`
+}
+
+func NewPassword(password string) Password {
+	return Password{Password: password}
+}
+
+func NewUser(username string) User {
+	return User{Name: username}
+}
+
+func ChangeUserPassword(connectionDetails ConnectionDetails, user User, password Password) bool {
+	url := connectionDetails.Endpoint + "/admin/users/" + user.Name + "/pwd"
+	payloadBuf := new(bytes.Buffer)
+	json.NewEncoder(payloadBuf).Encode(password)
+
+	req, err := http.NewRequest(http.MethodPut, url, payloadBuf)
+	if err != nil {
+		return false
+	}
+	req.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("Errored when sending request to the server")
+		return false
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == 200 {
 		return true
 	} else {
 		return false
