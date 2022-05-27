@@ -47,8 +47,8 @@ type Bubble struct {
 	connection               stardog.ConnectionDetails
 	addUserInputs            []textinput.Model
 	changeUserPasswordInputs []textinput.Model
-
-	focusIndex int
+	divider                  string
+	focusIndex               int
 }
 
 func New(config config.Config) Bubble {
@@ -69,6 +69,7 @@ func New(config config.Config) Bubble {
 	userList := list.New(items, itemDelegate, 0, 0)
 	userList.Title = "Users"
 	userList.Styles.Title.Bold(true).Italic(true).Background(lipgloss.Color("202"))
+	userList.SetShowHelp(false)
 
 	b := Bubble{
 		state:                    idleState,
@@ -87,6 +88,8 @@ func New(config config.Config) Bubble {
 		case 0:
 			addUserInput.Placeholder = "Username"
 			addUserInput.Focus()
+			addUserInput.PromptStyle = focusedStyle
+			addUserInput.TextStyle = focusedStyle
 		case 1:
 			addUserInput.Placeholder = "Password"
 			addUserInput.EchoMode = textinput.EchoPassword
@@ -106,6 +109,9 @@ func New(config config.Config) Bubble {
 			changeUserPasswordInput.EchoMode = textinput.EchoPassword
 			changeUserPasswordInput.EchoCharacter = '•'
 			changeUserPasswordInput.Focus()
+			changeUserPasswordInput.PromptStyle = focusedStyle
+			changeUserPasswordInput.TextStyle = focusedStyle
+
 		case 1:
 			changeUserPasswordInput.Placeholder = "Confirm password"
 			changeUserPasswordInput.EchoMode = textinput.EchoPassword
@@ -145,20 +151,33 @@ func (b *Bubble) SetSize(width, height int) {
 	}
 	b.list.SetSize(
 		width-horizontal-vertical,
-		height-vertical-inputHeight-addUserInputStyle.GetVerticalFrameSize(),
+		height-vertical-inputHeight-addUserInputStyle.GetVerticalFrameSize()-1,
 	)
+	b.divider = strings.Repeat("-", width-5)
 }
 
 func (b *Bubble) resetAddUserInputs() {
+	b.focusIndex = 0
 	for i := 0; i <= len(b.addUserInputs)-1; i++ {
 		b.addUserInputs[i].Reset()
+		b.addUserInputs[i].Blur()
+		b.addUserInputs[i].PromptStyle = noStyle
 	}
+	b.addUserInputs[0].PromptStyle = focusedStyle
+	b.addUserInputs[0].TextStyle = focusedStyle
+	b.addUserInputs[0].Focus()
 }
 
 func (b *Bubble) resetChangeUserPasswordInputs() {
+	b.focusIndex = 0
 	for i := 0; i <= len(b.changeUserPasswordInputs)-1; i++ {
 		b.changeUserPasswordInputs[i].Reset()
+		b.changeUserPasswordInputs[i].Blur()
+		b.changeUserPasswordInputs[i].PromptStyle = noStyle
 	}
+	b.changeUserPasswordInputs[0].PromptStyle = focusedStyle
+	b.changeUserPasswordInputs[0].TextStyle = focusedStyle
+	b.changeUserPasswordInputs[0].Focus()
 }
 
 func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
@@ -215,13 +234,11 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 				cmds := make([]tea.Cmd, len(b.addUserInputs))
 				for i := 0; i <= len(b.addUserInputs)-1; i++ {
 					if i == b.focusIndex {
-						// Set focused state
 						cmds[i] = b.addUserInputs[i].Focus()
 						b.addUserInputs[i].PromptStyle = focusedStyle
 						b.addUserInputs[i].TextStyle = focusedStyle
 						continue
 					}
-					// Remove focused state
 					b.addUserInputs[i].Blur()
 					b.addUserInputs[i].PromptStyle = noStyle
 					b.addUserInputs[i].TextStyle = noStyle
@@ -387,5 +404,5 @@ func (b Bubble) View() string {
 		inputView = builder.String()
 	}
 
-	return bubbleStyle.Render(lipgloss.JoinVertical(lipgloss.Top, b.list.View(), addUserInputStyle.Render(inputView)))
+	return bubbleStyle.Render(lipgloss.JoinVertical(lipgloss.Top, b.list.View(), b.divider, addUserInputStyle.Render(inputView)))
 }

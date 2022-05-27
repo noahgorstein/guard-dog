@@ -9,10 +9,6 @@ import (
 	"github.com/noahgorstein/stardog-go/stardog"
 )
 
-// var (
-// 	f, _ = tea.LogToFile("debug.log", "debug")
-// )
-
 type GetUserPermissionsMsg []table.Row
 
 func (b *Bubble) GetUserPermissionsCmd(user stardog.User) tea.Cmd {
@@ -45,6 +41,15 @@ func (b *Bubble) DeleteUserPermissionCmd(user stardog.User) tea.Cmd {
 			[]string{row.Data[columnKeyResource].(string)})
 		stardog.DeleteUserPermission(b.connection, user, *permission)
 		return DeleteUserPermissionMsg{success: true}
+	}
+
+}
+
+func (b *Bubble) AddUserPermissionCmd(user stardog.User, action string, resourceType string, resource string) tea.Cmd {
+	return func() tea.Msg {
+		permission := stardog.NewPermission(action, resourceType, []string{resource})
+		stardog.AddUserPermission(b.connection, user, *permission)
+		return nil
 	}
 
 }

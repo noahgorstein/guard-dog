@@ -172,6 +172,33 @@ func DeleteUserPermission(connectionDetails ConnectionDetails, user User, permis
 	}
 }
 
+func AddUserPermission(connectionDetails ConnectionDetails, user User, permission Permission) bool {
+	url := connectionDetails.Endpoint + "/admin/permissions/user/" + user.Name
+	payloadBuf := new(bytes.Buffer)
+	json.NewEncoder(payloadBuf).Encode(permission)
+
+	req, err := http.NewRequest(http.MethodPut, url, payloadBuf)
+	if err != nil {
+		fmt.Println(err)
+		return false
+	}
+	req.SetBasicAuth(connectionDetails.Username, connectionDetails.Password)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("Errored when sending request to the server")
+		return false
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == 201 {
+		return true
+	} else {
+		return false
+	}
+}
+
 type Credentials struct {
 	Username string   `json:"username"`
 	Password []string `json:"password"`
