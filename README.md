@@ -1,15 +1,16 @@
-# guard-dog
-
-```                                      
-  ____ _   _   _    ____  ____    ____   ___   ____ 
- / ___| | | | / \  |  _ \|  _ \  |  _ \ / _ \ / ___|
-| |  _| | | |/ _ \ | |_) | | | | | | | | | | | |  _ 
-| |_| | |_| / ___ \|  _ <| |_| | | |_| | |_| | |_| |
- \____|\___/_/   \_|_| \_|____/  |____/ \___/ \____|                                                 
-```
+# guard-dog 🔒🐕
 
 A TUI to manage users, roles, and permissions in [Stardog](https://www.stardog.com/).
 
+https://user-images.githubusercontent.com/23270779/176809760-984de87f-649d-4223-a86e-b6fa571ccccc.mov
+
+`guard-dog` currently supports:
+- viewing users, roles and their respective permissions
+- granting and revoking permissions from users and roles
+- assigning and unassigning users from/to roles
+- deleting users and roles
+- changing users' passwords
+- enabling and disabling users
 
 ## Installation
 
@@ -27,10 +28,17 @@ Download the relevant asset for your operating system from the latest Github rel
 
 Clone this repo, build from source with `cd guard-dog && go build`, then move the binary to somewhere accessible in your `PATH`, e.g. `mv ./guard-dog /usr/local/bin`.
 
-
 ## Usage
 
 Run the app by running `guard-dog` in a terminal. See `guard-dog --help` and [configuration](#configuration) section below for details.
+
+### Controls
+
+- To switch between panes, `tab`. This is important as actions can only be performed if the pane is active. For example, in order to create a new user (`ctrl+n`), the `user list` tab must be active. In order to add an explicit permission to a user, the `user details` pane must be active. 
+  
+-  Controls are highlighted throughout the app. If needed,`?` displays a help menu on the right side of the app. The help menu lists the controls for the current active pane. 
+
+<img width="1298" alt="help" src="https://user-images.githubusercontent.com/23270779/176811048-3c5879d7-4f28-40f7-9064-8c9f8e5df59b.png">
 
 ## Configuration
 
@@ -65,5 +73,4 @@ Alternatively, `guard-dog` can be configured via environment variables, or via c
 - [bubble-table](https://github.com/Evertras/bubble-table)
 - [teacup](https://github.com/knipferrc/teacup)
 - [lipgloss](https://github.com/charmbracelet/lipgloss)
-- [Cobra](https://github.com/spf13/cobra)
 - [go-stardog](https://github.com/noahgorstein/go-stardog)
