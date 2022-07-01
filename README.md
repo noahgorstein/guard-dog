@@ -57,6 +57,8 @@ Alternatively, `guard-dog` can be configured via environment variables, or via c
 
 > Command line args take precedence over both the configuation file and environment variables. Environment variables take precedence over the configuration file.
 
+`guard-dog` will attempt to authenticate using the default superuser `admin` with password `admin` on `http://localhost:5820` if no credentials are provided.
+
 ### Environment Variables
 
 | Environment Variable  |  Description |
