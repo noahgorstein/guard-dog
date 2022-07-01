@@ -66,7 +66,7 @@ Alternatively, `guard-dog` can be configured via environment variables, or via c
 | `GUARD_DOG_SERVER`  | Stardog server to connect to |
 
 
-### Built With
+## Built With
 
 - [bubbletea](https://github.com/charmbracelet/bubbletea)
 - [bubbles](https://github.com/charmbracelet/bubbles)
@@ -74,3 +74,8 @@ Alternatively, `guard-dog` can be configured via environment variables, or via c
 - [teacup](https://github.com/knipferrc/teacup)
 - [lipgloss](https://github.com/charmbracelet/lipgloss)
 - [go-stardog](https://github.com/noahgorstein/go-stardog)
+
+## Notes
+
+- 🚧 this project is under active development and is relatively unstable. Please file an issue if you see a bug or have suggestions on how to improve the app.
+
