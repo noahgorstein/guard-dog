@@ -49,7 +49,7 @@ func NewRootCommand() *cobra.Command {
 			bubble := tui.New(*client, username, endpoint)
 			p := tea.NewProgram(bubble, tea.WithAltScreen())
 
-			if err := p.Start(); err != nil {
+			if _, err := p.Run(); err != nil {
 				fmt.Println("Error running program:", err)
 				os.Exit(1)
 			}
