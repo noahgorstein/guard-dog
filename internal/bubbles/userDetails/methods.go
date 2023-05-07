@@ -24,11 +24,11 @@ func (b Bubble) generateContent(width, height int) string {
 	roles := wordwrap.NewWriter(b.viewport.Width)
 	if len(b.assignedRoles) > 0 {
 		for _, role := range b.assignedRoles {
-			roles.Write([]byte(lipgloss.NewStyle().
+			_, _ = roles.Write([]byte(lipgloss.NewStyle().
 				Bold(true).
 				Foreground(nord14).
 				Render(role)))
-			roles.Write([]byte(" "))
+			_, _ = roles.Write([]byte(" "))
 		}
 	} else {
 		sb.WriteString("No assigned roles.")

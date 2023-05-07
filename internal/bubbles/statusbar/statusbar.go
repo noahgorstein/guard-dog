@@ -135,7 +135,7 @@ func (b Bubble) View() string {
 	endpoint := lipgloss.NewStyle().
 		Align(lipgloss.Right).
 		Width(int(float64(b.width) * 0.5)).
-		Render(b.Styles.EndpointStyle.Render(b.stardogClient.Username + "@" + b.stardogClient.BaseURL))
+		Render(b.Styles.EndpointStyle.Render("@"))
 
 	return b.Styles.StatusBarStyle.Render(
 		lipgloss.JoinVertical(lipgloss.Left,

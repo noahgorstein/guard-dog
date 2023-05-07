@@ -74,10 +74,7 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 		case AddingRolePermissionState:
 
 			if msg.String() == "enter" && b.addPermissionsPrompt.State == permissionPrompt.SubmitState {
-				addRolePermissionCmd := b.CreateRolePermissionCmd(
-					b.addPermissionsPrompt.Permission.Action,
-					b.addPermissionsPrompt.Permission.ResourceType,
-					b.addPermissionsPrompt.Permission.Resource)
+				addRolePermissionCmd := b.CreateRolePermissionCmd(b.addPermissionsPrompt.Permission)
 				cmds = append(cmds, addRolePermissionCmd)
 
 				b.addPermissionsPrompt.Reset()

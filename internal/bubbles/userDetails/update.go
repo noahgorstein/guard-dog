@@ -26,14 +26,22 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 				b.viewport.Height,
 			))
 	case GetAvailableRolesMsg:
-		b.addRoleSelector.SetChoices(msg)
+		choices := make(map[string]interface{})
+		for _, r := range msg {
+			choices[r] = r
+		}
+		b.addRoleSelector.SetChoices(choices)
 		b.viewport.SetContent(
 			b.generateContent(
 				b.viewport.Width,
 				b.viewport.Height,
 			))
 	case GetAssignedRolesMsg:
-		b.removeRoleSelector.SetChoices(msg)
+		choices := make(map[string]interface{})
+		for _, r := range msg {
+			choices[r] = r
+		}
+		b.removeRoleSelector.SetChoices(choices)
 		b.viewport.SetContent(
 			b.generateContent(
 				b.viewport.Width,
@@ -137,11 +145,7 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 
 				if b.addPermissionsPrompt.State == addpermissionprompt.SubmitState &&
 					msg.Type == tea.KeyEnter {
-					addUserPermissionCmd := b.GrantUserPermissionCmd(
-						b.addPermissionsPrompt.Permission.Action,
-						b.addPermissionsPrompt.Permission.ResourceType,
-						b.addPermissionsPrompt.Permission.Resource,
-					)
+					addUserPermissionCmd := b.GrantUserPermissionCmd(b.addPermissionsPrompt.Permission)
 					cmds = append(cmds, addUserPermissionCmd)
 					b.addPermissionsPrompt.Reset()
 					b.viewport.GotoTop()
@@ -164,7 +168,7 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 					b.addRoleSelector.SetIsActive(false)
 				case tea.KeyEnter, tea.KeySpace:
 					if b.focusIndex > 0 {
-						addRoleToUserCmd := b.AssignUserRole(b.addRoleSelector.GetSelected())
+						addRoleToUserCmd := b.AssignUserRole(b.addRoleSelector.GetSelected().(string))
 						cmds = append(cmds, addRoleToUserCmd)
 						b.focusIndex = 0
 						b.State = IdleState
@@ -195,7 +199,7 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 					b.removeRoleSelector.SetIsActive(false)
 				case tea.KeyEnter, tea.KeySpace:
 					if b.focusIndex > 0 {
-						removeRoleFromUserCmd := b.RemoveRoleFromUser(b.removeRoleSelector.GetSelected())
+						removeRoleFromUserCmd := b.RemoveRoleFromUser(b.removeRoleSelector.GetSelected().(string))
 						cmds = append(cmds, removeRoleFromUserCmd)
 						b.focusIndex = 0
 						b.State = IdleState

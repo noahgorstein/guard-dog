@@ -95,7 +95,7 @@ func getRoleDetailsViewHelpEntries() []help.Entry {
 	}
 }
 
-func New(stardogClient stardog.Client) Bubble {
+func New(stardogClient stardog.Client, loggedInUser string) Bubble {
 
 	userlist := userlist.New(stardogClient)
 	userlist.SetIsActive(true)
@@ -137,7 +137,7 @@ func New(stardogClient stardog.Client) Bubble {
 		Dark:  string(grey),
 	})
 
-	userdetails := userdetails.New(stardogClient)
+	userdetails := userdetails.New(stardogClient, loggedInUser)
 	userdetails.SetIsActive(false)
 	userdetails.Styles.ActiveViewportStyle.BorderForeground(lipgloss.Color(nord12))
 	userdetails.Styles.InactiveViewportStyle.BorderForeground(lipgloss.AdaptiveColor{

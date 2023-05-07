@@ -6,6 +6,7 @@ import (
 
 	"github.com/charmbracelet/bubbles/list"
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/noahgorstein/go-stardog/stardog"
 )
 
 type SuccessMsg struct {
@@ -27,7 +28,7 @@ func (b *Bubble) GetRolesCmd() tea.Cmd {
 
 func (b *Bubble) CreateRoleCmd(rolename string) tea.Cmd {
 	return func() tea.Msg {
-		_, err := b.stardogClient.Security.CreateRole(context.Background(), rolename)
+		_, err := b.stardogClient.Role.Create(context.Background(), rolename)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -42,7 +43,8 @@ func (b *Bubble) CreateRoleCmd(rolename string) tea.Cmd {
 func (b *Bubble) ForceDeleteRoleCmd() tea.Cmd {
 	return func() tea.Msg {
 		roleToDelete := b.GetSelectedRole()
-		_, err := b.stardogClient.Security.DeleteRole(context.Background(), roleToDelete, true)
+		opts := stardog.DeleteRoleOptions{Force: true}
+		_, err := b.stardogClient.Role.Delete(context.Background(), roleToDelete, &opts)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -57,7 +59,8 @@ func (b *Bubble) ForceDeleteRoleCmd() tea.Cmd {
 func (b *Bubble) DeleteRoleCmd() tea.Cmd {
 	return func() tea.Msg {
 		roleToDelete := b.GetSelectedRole()
-		_, err := b.stardogClient.Security.DeleteRole(context.Background(), roleToDelete, false)
+		opts := stardog.DeleteRoleOptions{Force: false}
+		_, err := b.stardogClient.Role.Delete(context.Background(), roleToDelete, &opts)
 		if err != nil {
 			return errMsg{
 				err: err,

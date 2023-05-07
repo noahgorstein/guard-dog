@@ -36,6 +36,7 @@ type Bubble struct {
 	selectedUser              string
 	assignedRoles             []string
 	addPermissionsPrompt      addpermissionprompt.Bubble
+	loggedInUser              string
 
 	addRoleSelector    selector.Model
 	removeRoleSelector selector.Model
@@ -43,7 +44,7 @@ type Bubble struct {
 	submitButton       string
 }
 
-func New(stardogClient stardog.Client) Bubble {
+func New(stardogClient stardog.Client, loggedInUser string) Bubble {
 	styles := DefaultStyles()
 
 	viewport := viewport.New(0, 0)
@@ -79,9 +80,10 @@ func New(stardogClient stardog.Client) Bubble {
 		viewport:                  viewport,
 		permissionTableColumnKeys: permissionTableColumnKeys,
 		permissionsTable:          permissionsTable,
-		addRoleSelector:           selector.New("Select a role: ", []string{}, 0, 0),
-		removeRoleSelector:        selector.New("Remove a role: ", []string{}, 0, 0),
+		addRoleSelector:           selector.New("Select a role: ", make(map[string]interface{}), 0, 0),
+		removeRoleSelector:        selector.New("Remove a role: ", make(map[string]interface{}), 0, 0),
 		addPermissionsPrompt:      addpermissionprompt.New(),
+		loggedInUser:              loggedInUser,
 	}
 
 	return b

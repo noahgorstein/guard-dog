@@ -124,8 +124,12 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 				deleteStardogUserCmd := b.DeleteUserCmd()
 				cmds = append(cmds, deleteStardogUserCmd)
 			case key.Matches(msg, enableUserKey):
-				enabledStardogUserCmd := b.EnableUserCmd(!b.GetSelectedUser().enabled)
-				cmds = append(cmds, enabledStardogUserCmd)
+				if b.GetSelectedUser().Enabled() {
+					cmd = b.DisableUserCmd()
+				} else {
+					cmd = b.EnableUserCmd()
+				}
+				cmds = append(cmds, cmd)
 			}
 		}
 	}

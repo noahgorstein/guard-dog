@@ -3,6 +3,8 @@ package addpermissionprompt
 import (
 	"fmt"
 	"strings"
+
+	"github.com/noahgorstein/go-stardog/stardog"
 )
 
 func (b *Bubble) Reset() {
@@ -40,11 +42,11 @@ func (b *Bubble) SetSize(width int) {
 	b.Styles.activeResourceInputs.Width(width - 5)
 }
 
-func (b *Bubble) updatePermissionAction(action string) {
+func (b *Bubble) updatePermissionAction(action stardog.PermissionAction) {
 	b.Permission.Action = action
 }
 
-func (b *Bubble) updatePermissionResourceType(resourceType string) {
+func (b *Bubble) updatePermissionResourceType(resourceType stardog.PermissionResourceType) {
 	b.Permission.ResourceType = resourceType
 }
 
@@ -54,22 +56,22 @@ func (b *Bubble) updatePermissionResource(resource string) {
 	b.Permission.Resource = permissionResourceArr
 }
 
-func (b *Bubble) updateResourcePromptPlaceholder(selectedResourceType string) {
+func (b *Bubble) updateResourcePromptPlaceholder(selectedResourceType stardog.PermissionResourceType) {
 
 	switch selectedResourceType {
-	case "DB", "METADATA", "ADMIN", "ICV-CONSTRAINTS", "SENSITIVE-PROPERTIES", "STORED-QUERY":
+	case stardog.PermissionResourceTypeDatabase, stardog.PermissionResourceTypeMetadata, stardog.PermissionResourceTypeServeradmin, stardog.PermissionResourceTypeSensitiveProperty, stardog.PermissionResourceTypeStoredQuery:
 		b.resourceInput.Placeholder = "myDatabase"
-	case "ROLE":
+	case stardog.PermissionResourceTypeRole:
 		b.resourceInput.Placeholder = "myRole"
-	case "USER":
+	case stardog.PermissionResourceTypeUser:
 		b.resourceInput.Placeholder = "myUser"
-	case "NAMED-GRAPH":
+	case stardog.PermissionResourceTypeNamedGraph:
 		b.resourceInput.Placeholder = "myDatabase\\https://my.graph.com"
-	case "VIRTUAL-GRAPH":
+	case stardog.PermissionResourceTypeVirtualGraph:
 		b.resourceInput.Placeholder = "virtual://myVirtualGraph"
-	case "DATA-SOURCE":
+	case stardog.PermissionResourceTypeDataSource:
 		b.resourceInput.Placeholder = "data-source://myDataSource"
-	case "DBMS-ADMIN":
+	case stardog.PermissionResourceTypeDatabaseAdmin:
 		b.resourceInput.Placeholder = "metrics"
 	}
 
