@@ -46,7 +46,7 @@ func NewRootCommand() *cobra.Command {
 				log.Fatalf("Server: %s is not alive.", endpoint)
 			}
 
-			bubble := tui.New(*client, username)
+			bubble := tui.New(*client, username, endpoint)
 			p := tea.NewProgram(bubble, tea.WithAltScreen())
 
 			if err := p.Start(); err != nil {

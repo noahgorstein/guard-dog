@@ -95,7 +95,7 @@ func getRoleDetailsViewHelpEntries() []help.Entry {
 	}
 }
 
-func New(stardogClient stardog.Client, loggedInUser string) Bubble {
+func New(stardogClient stardog.Client, loggedInUser, serverEndpoint string) Bubble {
 
 	userlist := userlist.New(stardogClient)
 	userlist.SetIsActive(true)
@@ -159,7 +159,7 @@ func New(stardogClient stardog.Client, loggedInUser string) Bubble {
 
 	helpModel.Borderless = true
 
-	statusbar := statusbar.New(stardogClient)
+	statusbar := statusbar.New(stardogClient, loggedInUser, serverEndpoint)
 	statusbar.StatusMessageLifetime = time.Duration(30 * time.Second)
 
 	return Bubble{

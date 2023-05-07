@@ -45,8 +45,8 @@ func (b Bubble) generateContent(width, height int) string {
 	if len(b.usersAssignedToRole) > 0 {
 		for _, user := range b.usersAssignedToRole {
 			username := []byte(lipgloss.NewStyle().Bold(true).Foreground(nord14).Render(user))
-			_,_ = users.Write(username)
-			_,_ = users.Write([]byte(" "))
+			_, _ = users.Write(username)
+			_, _ = users.Write([]byte(" "))
 		}
 	} else {
 		sb.WriteString(b.Styles.textStyle.Render("Role is not assigned to any user."))
