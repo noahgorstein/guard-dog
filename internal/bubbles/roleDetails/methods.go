@@ -115,8 +115,8 @@ func (b Bubble) generateContent(width, height int) string {
 }
 
 func (b *Bubble) SetSize(width, height int) {
-	b.viewport.Width = width - b.viewport.Style.GetHorizontalFrameSize()
-	b.viewport.Height = height - b.viewport.Style.GetVerticalFrameSize()
+	b.viewport.Width = width 
+	b.viewport.Height = height
 
 	b.viewport.SetContent(b.generateContent(b.viewport.Width, b.viewport.Height))
 }
