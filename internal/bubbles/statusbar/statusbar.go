@@ -38,7 +38,7 @@ type Bubble struct {
 
 func New(stardogClient stardog.Client, loggedInUser, serverEndpoint string) Bubble {
 	styles := DefaultStyles()
-	help := help.NewModel()
+	help := help.New()
 	help.Styles.ShortKey = styles.HelpKeyStyle
 	help.Styles.ShortDesc = styles.HelpTextStyle
 	help.Styles.ShortSeparator = styles.HelpTextStyle

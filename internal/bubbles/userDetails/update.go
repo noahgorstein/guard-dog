@@ -16,14 +16,13 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 
 	switch msg := msg.(type) {
 	case tea.WindowSizeMsg:
-		b.addPermissionsPrompt.SetSize(b.viewport.Width)
+		b.addPermissionsPrompt.SetSize(b.viewport.Width - b.viewport.Style.GetHorizontalFrameSize())
 	case GetUserDetailsMsg:
 		b.assignedRoles = msg.Roles
 		b.permissionsTable = b.permissionsTable.WithRows(msg.Permissions)
 		b.viewport.SetContent(
 			b.generateContent(
 				b.viewport.Width,
-				b.viewport.Height,
 			))
 	case GetAvailableRolesMsg:
 		choices := make(map[string]interface{})
@@ -34,7 +33,6 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 		b.viewport.SetContent(
 			b.generateContent(
 				b.viewport.Width,
-				b.viewport.Height,
 			))
 	case GetAssignedRolesMsg:
 		choices := make(map[string]interface{})
@@ -45,7 +43,6 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 		b.viewport.SetContent(
 			b.generateContent(
 				b.viewport.Width,
-				b.viewport.Height,
 			))
 	case tea.KeyMsg:
 
@@ -66,7 +63,6 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 					b.viewport.SetContent(
 						b.generateContent(
 							b.viewport.Width,
-							b.viewport.Height,
 						))
 				}
 
@@ -75,7 +71,6 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 					b.viewport.SetContent(
 						b.generateContent(
 							b.viewport.Width,
-							b.viewport.Height,
 						))
 				}
 				if key.Matches(msg, assignRoleToUser) {
@@ -103,7 +98,6 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 					b.viewport.SetContent(
 						b.generateContent(
 							b.viewport.Width,
-							b.viewport.Height,
 						))
 				}
 				if key.Matches(msg, revokeUserPermissionKey) {
@@ -132,7 +126,6 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 				b.viewport.SetContent(
 					b.generateContent(
 						b.viewport.Width,
-						b.viewport.Height,
 					))
 
 				return b, tea.Batch(cmds...)
@@ -223,7 +216,6 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 			b.viewport.SetContent(
 				b.generateContent(
 					b.viewport.Width,
-					b.viewport.Height,
 				))
 
 			return b, tea.Batch(cmds...)
