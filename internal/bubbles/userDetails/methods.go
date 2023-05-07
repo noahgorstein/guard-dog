@@ -12,7 +12,8 @@ func (b *Bubble) SetCurrentUser(user string) {
 	b.selectedUser = user
 }
 
-func (b Bubble) generateContent(width, height int) string {
+func (b Bubble) generateContent(width int) string {
+	width = width - b.viewport.Style.GetHorizontalFrameSize()
 
 	var sb strings.Builder
 
@@ -117,10 +118,10 @@ func (b Bubble) generateContent(width, height int) string {
 			sb.WriteString(lipgloss.NewStyle().Bold(true).Foreground(nord8).Render("esc") + " to go back")
 		}
 	}
-
+	emptyLinesPastLastContent := 10
 	return lipgloss.NewStyle().
 		Width(width).
-		Height(height).
+		Height(lipgloss.Height(sb.String()) + emptyLinesPastLastContent).
 		Render(sb.String())
 }
 
@@ -135,7 +136,6 @@ func (b *Bubble) SetSize(width, height int) {
 	b.viewport.SetContent(
 		b.generateContent(
 			b.viewport.Width,
-			b.viewport.Height,
 		))
 }
 
@@ -147,7 +147,6 @@ func (b *Bubble) Reset() {
 	b.viewport.SetContent(
 		b.generateContent(
 			b.viewport.Width,
-			b.viewport.Height,
 		))
 }
 

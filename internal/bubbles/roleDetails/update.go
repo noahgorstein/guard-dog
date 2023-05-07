@@ -13,14 +13,12 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 
 	switch msg := msg.(type) {
 	case tea.WindowSizeMsg:
-		b.addPermissionsPrompt.SetSize(b.viewport.Width)
+		b.addPermissionsPrompt.SetSize(b.viewport.Width - b.viewport.Style.GetHorizontalFrameSize())
 	case GetRoleDetailsMsg:
 		b.usersAssignedToRole = msg.roles
 		b.permissionsTable = b.permissionsTable.WithRows(msg.permissions)
 		b.viewport.SetContent(
-			b.generateContent(
-				b.viewport.Width,
-				b.viewport.Height))
+			b.generateContent(b.viewport.Width))
 	case tea.KeyMsg:
 		switch b.State {
 		case IdleState:
@@ -32,7 +30,6 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 				b.viewport.SetContent(
 					b.generateContent(
 						b.viewport.Width,
-						b.viewport.Height,
 					))
 			}
 
@@ -40,9 +37,7 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 				b.State = AddingRolePermissionState
 				b.resetPermissionsTable()
 				b.viewport.SetContent(
-					b.generateContent(
-						b.viewport.Width,
-						b.viewport.Height))
+					b.generateContent(b.viewport.Width))
 			}
 
 		case TableState:
@@ -56,10 +51,7 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 			if key.Matches(msg, grantRolePermissionKey) {
 				b.State = AddingRolePermissionState
 				b.resetPermissionsTable()
-				b.viewport.SetContent(
-					b.generateContent(
-						b.viewport.Width,
-						b.viewport.Height))
+				b.viewport.SetContent(b.generateContent(b.viewport.Width))
 			}
 
 			if !b.permissionsTable.GetIsFilterActive() && msg.Type == tea.KeyEsc {
@@ -97,7 +89,7 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 	b.viewport, cmd = b.viewport.Update(msg)
 	cmds = append(cmds, cmd)
 
-	b.viewport.SetContent(b.generateContent(b.viewport.Width, b.viewport.Height))
+	b.viewport.SetContent(b.generateContent(b.viewport.Width))
 
 	return b, tea.Batch(cmds...)
 
