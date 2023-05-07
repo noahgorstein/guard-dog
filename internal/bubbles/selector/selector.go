@@ -12,9 +12,10 @@ type item struct {
 
 type Model struct {
 	active        bool
-	choices       []string     // items on the to-do list
-	cursor        int          // which to-do list item our cursor is pointing at
-	selected      map[int]item // which to-do items are selected
+	choiceMap     map[string]interface{}
+	choices       []string
+	cursor        int
+	selected      map[int]item
 	selectedIndex int
 	prompt        string
 	height        int
@@ -22,26 +23,41 @@ type Model struct {
 	Styles        Styles
 }
 
-func New(prompt string, choices []string, height int, width int) Model {
+func New(prompt string, choiceMap map[string]interface{}, height int, width int) Model {
+	choices := []string{}
+	for k := range choiceMap {
+		choices = append(choices, k)
+	}
+
 	return Model{
-		Styles:   DefaultStyles(),
-		prompt:   prompt,
-		choices:  choices,
-		selected: make(map[int]item),
-		width:    width,
-		height:   height,
+		Styles:    DefaultStyles(),
+		prompt:    prompt,
+		choiceMap: choiceMap,
+		choices:   choices,
+		selected:  make(map[int]item),
+		width:     width,
+		height:    height,
 	}
 }
 
-func (m Model) GetSelected() string {
-	return m.selected[m.selectedIndex].name
+func (m Model) GetSelected() interface{} {
+	key := m.selected[m.selectedIndex].name
+	return m.choiceMap[key]
 }
 
 func (m *Model) GetChoices() []string {
 	return m.choices
 }
 
-func (m *Model) SetChoices(choices []string) {
+func (m *Model) SetChoices(choiceMap map[string]interface{}) {
+	if choiceMap == nil {
+		choiceMap = make(map[string]interface{})
+	}
+	choices := []string{}
+	for k := range choiceMap {
+		choices = append(choices, k)
+	}
+	m.choiceMap = choiceMap
 	m.choices = choices
 }
 

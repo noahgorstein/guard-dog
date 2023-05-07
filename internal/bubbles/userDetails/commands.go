@@ -25,7 +25,7 @@ type GetRolesMsg []string
 
 func (b *Bubble) GetRolesCmd() tea.Cmd {
 	return func() tea.Msg {
-		roleList, err := b.stardogClient.Security.ListRoles(context.Background())
+		roleList, _, err := b.stardogClient.Role.ListNames(context.Background())
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -42,7 +42,7 @@ func (b *Bubble) GetAvailableRoles() tea.Cmd {
 
 		availableRoles := map[string]struct{}{}
 
-		roleList, err := b.stardogClient.Security.ListRoles(context.Background())
+		roleList, _, err := b.stardogClient.Role.ListNames(context.Background())
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -52,7 +52,7 @@ func (b *Bubble) GetAvailableRoles() tea.Cmd {
 			availableRoles[role] = struct{}{}
 		}
 
-		assignedRoles, err := b.stardogClient.Security.ListRolesAssignedToUser(context.Background(), b.selectedUser)
+		assignedRoles, _, err := b.stardogClient.User.Roles(context.Background(), b.selectedUser)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -75,7 +75,7 @@ type GetAssignedRolesMsg []string
 
 func (b *Bubble) GetRolesAssignedToUser() tea.Cmd {
 	return func() tea.Msg {
-		roleList, err := b.stardogClient.Security.ListRolesAssignedToUser(context.Background(), b.selectedUser)
+		roleList, _, err := b.stardogClient.User.Roles(context.Background(), b.selectedUser)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -88,7 +88,7 @@ func (b *Bubble) GetRolesAssignedToUser() tea.Cmd {
 func (b *Bubble) RemoveRoleFromUser(role string) tea.Cmd {
 	return func() tea.Msg {
 
-		_, err := b.stardogClient.Security.RemoveRoleFromUser(context.Background(), b.selectedUser, role)
+		_, err := b.stardogClient.User.UnassignRole(context.Background(), b.selectedUser, role)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -102,7 +102,7 @@ func (b *Bubble) RemoveRoleFromUser(role string) tea.Cmd {
 
 func (b *Bubble) AssignUserRole(role string) tea.Cmd {
 	return func() tea.Msg {
-		_, err := b.stardogClient.Security.AssignRoleToUser(context.Background(), b.selectedUser, role)
+		_, err := b.stardogClient.User.AssignRole(context.Background(), b.selectedUser, role)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -131,23 +131,23 @@ var (
 	darkBlue = lipgloss.NewStyle().Bold(true).Foreground(nord9)
 )
 
-func getRowStyle(action string) lipgloss.Style {
+func getRowStyle(action stardog.PermissionAction) lipgloss.Style {
 	switch action {
-	case "ALL":
+	case stardog.PermissionActionAll:
 		return red
-	case "READ":
+	case stardog.PermissionActionRead:
 		return orange
-	case "WRITE":
+	case stardog.PermissionActionWrite:
 		return yellow
-	case "CREATE":
+	case stardog.PermissionActionCreate:
 		return green
-	case "DELETE":
+	case stardog.PermissionActionDelete:
 		return teal
-	case "EXECUTE":
+	case stardog.PermissionActionExecute:
 		return blue
-	case "GRANT":
+	case stardog.PermissionActionGrant:
 		return purple
-	case "REVOKE":
+	case stardog.PermissionActionRevoke:
 		return darkBlue
 	default:
 		return lipgloss.NewStyle()
@@ -157,14 +157,14 @@ func getRowStyle(action string) lipgloss.Style {
 func (b *Bubble) GetUserDetailsCmd(updateOccured bool) tea.Cmd {
 	return func() tea.Msg {
 		rows := []table.Row{}
-		userDetails, err := b.stardogClient.Security.GetUserDetails(context.Background(), b.selectedUser)
+		userDetails, _, err := b.stardogClient.User.Get(context.Background(), b.selectedUser)
 		if err != nil {
 			return errMsg{
 				err: err,
 			}
 		}
 
-		for _, permission := range userDetails.Permissions {
+		for _, permission := range userDetails.EffectivePermissions {
 
 			if permission.Explicit {
 
@@ -187,12 +187,12 @@ func (b *Bubble) GetUserDetailsCmd(updateOccured bool) tea.Cmd {
 func (b *Bubble) DeleteUserPermissionCmd() tea.Cmd {
 	return func() tea.Msg {
 		row := b.permissionsTable.HighlightedRow()
-		permission := stardog.NewPermission(
-			row.Data[b.permissionTableColumnKeys.action].(string),
-			row.Data[b.permissionTableColumnKeys.resourceType].(string),
-			[]string{row.Data[b.permissionTableColumnKeys.resource].(string)})
+		permission := stardog.Permission{
+			Action:       row.Data[b.permissionTableColumnKeys.action].(stardog.PermissionAction),
+			ResourceType: row.Data[b.permissionTableColumnKeys.resourceType].(stardog.PermissionResourceType),
+			Resource:     []string{row.Data[b.permissionTableColumnKeys.resource].(string)}}
 
-		_, err := b.stardogClient.Security.RevokeUserPermission(context.Background(), b.selectedUser, *permission)
+		_, err := b.stardogClient.User.RevokePermission(context.Background(), b.selectedUser, permission)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -208,10 +208,9 @@ func (b *Bubble) DeleteUserPermissionCmd() tea.Cmd {
 
 }
 
-func (b *Bubble) GrantUserPermissionCmd(action string, resourceType string, resource []string) tea.Cmd {
+func (b *Bubble) GrantUserPermissionCmd(permission stardog.Permission) tea.Cmd {
 	return func() tea.Msg {
-		permission := stardog.NewPermission(action, resourceType, resource)
-		_, err := b.stardogClient.Security.GrantUserPermission(context.Background(), b.selectedUser, *permission)
+		_, err := b.stardogClient.User.GrantPermission(context.Background(), b.selectedUser, permission)
 		if err != nil {
 			return errMsg{
 				err: err,

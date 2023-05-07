@@ -1,15 +1,16 @@
 module github.com/noahgorstein/guard-dog
 
-go 1.18
+go 1.20
 
 require (
 	github.com/evertras/bubble-table v0.14.2
-	github.com/noahgorstein/go-stardog v0.2.1
+	github.com/noahgorstein/go-stardog v0.7.0
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/viper v1.12.0
 )
 
 require (
+	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/muesli/cancelreader v0.2.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect

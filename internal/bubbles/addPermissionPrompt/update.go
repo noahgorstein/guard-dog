@@ -3,6 +3,7 @@ package addpermissionprompt
 import (
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/noahgorstein/go-stardog/stardog"
 )
 
 func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
@@ -21,14 +22,21 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 			cmds = append(cmds, cmd)
 
 			if key.Matches(msg, previousKey) {
-				b.updatePermissionAction(b.actionSelector.GetSelected())
+				a, ok := b.actionSelector.GetSelected().(stardog.PermissionAction)
+				if ok {
+					b.updatePermissionAction(a)
+				}
 				b.State = SubmitState
 				b.actionSelector.SetIsActive(false)
 				b.focusIndex = 1
 			}
 
 			if msg.Type == tea.KeyEnter || key.Matches(msg, nextKey) {
-				b.updatePermissionAction(b.actionSelector.GetSelected())
+				a, ok := b.actionSelector.GetSelected().(stardog.PermissionAction)
+				if ok {
+					b.updatePermissionAction(a)
+				}
+				b.State = SubmitState
 				b.State = SelectingResourceTypeState
 				b.resourceTypeSelector.SetIsActive(true)
 				b.actionSelector.SetIsActive(false)
@@ -39,15 +47,21 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 			cmds = append(cmds, cmd)
 
 			if key.Matches(msg, previousKey) {
-				b.updatePermissionResourceType(b.resourceTypeSelector.GetSelected())
+				rt, ok := b.resourceTypeSelector.GetSelected().(stardog.PermissionResourceType)
+				if ok {
+					b.updatePermissionResourceType(rt)
+				}
 				b.State = SelectionActionState
 				b.resourceTypeSelector.SetIsActive(false)
 				b.actionSelector.SetIsActive(true)
 			}
 
 			if msg.Type == tea.KeyEnter || key.Matches(msg, nextKey) {
-				b.updatePermissionResourceType(b.resourceTypeSelector.GetSelected())
-				b.updateResourcePromptPlaceholder(b.resourceTypeSelector.GetSelected())
+				rt, ok := b.resourceTypeSelector.GetSelected().(stardog.PermissionResourceType)
+				if ok {
+					b.updatePermissionResourceType(rt)
+					b.updateResourcePromptPlaceholder(rt)
+				}
 
 				b.State = SelectingResourceState
 				b.resourceTypeSelector.SetIsActive(false)

@@ -3,6 +3,7 @@ package cmd
 import (
 	"context"
 	"fmt"
+	"log"
 	"os"
 	"strings"
 
@@ -15,7 +16,6 @@ import (
 )
 
 // Credits: https://github.com/carolynvs/stingoftheviper
-
 const (
 	defaultConfigFilename = ".guard-dog"
 	envPrefix             = "GUARD_DOG"
@@ -33,15 +33,20 @@ func NewRootCommand() *cobra.Command {
 			return initializeConfig(cmd)
 		},
 		Run: func(cmd *cobra.Command, args []string) {
-			client := stardog.NewClient(endpoint, username, password)
-			_, err := client.ServerAdmin.Alive(context.Background())
-			if err != nil {
 
-				fmt.Printf("Unable to connect to the Stardog server: %s with user: %s\n", endpoint, username)
-				os.Exit(1)
+			basicAuthTransport := &stardog.BasicAuthTransport{
+				Username: username,
+				Password: password,
 			}
 
-			bubble := tui.New(*client)
+			client, _ := stardog.NewClient(endpoint, basicAuthTransport.Client())
+
+			alive, _, err := client.ServerAdmin.IsAlive(context.Background())
+			if err != nil || !*alive {
+				log.Fatalf("Server: %s is not alive.", endpoint)
+			}
+
+			bubble := tui.New(*client, username, endpoint)
 			p := tea.NewProgram(bubble, tea.WithAltScreen())
 
 			if err := p.Start(); err != nil {
@@ -69,7 +74,6 @@ func initializeConfig(cmd *cobra.Command) error {
 	v.AddConfigPath(home)
 
 	if err := v.ReadInConfig(); err != nil {
-		// It's okay if there isn't a config file
 		if _, ok := err.(viper.ConfigFileNotFoundError); !ok {
 			return err
 		}
@@ -90,13 +94,13 @@ func bindFlags(cmd *cobra.Command, v *viper.Viper) {
 		// keys with underscores, e.g. --favorite-color to STING_FAVORITE_COLOR
 		if strings.Contains(f.Name, "-") {
 			envVarSuffix := strings.ToUpper(strings.ReplaceAll(f.Name, "-", "_"))
-			v.BindEnv(f.Name, fmt.Sprintf("%s_%s", envPrefix, envVarSuffix))
+			_ = v.BindEnv(f.Name, fmt.Sprintf("%s_%s", envPrefix, envVarSuffix))
 		}
 
 		// Apply the viper config value to the flag when the flag is not set and viper has a value
 		if !f.Changed && v.IsSet(f.Name) {
 			val := v.Get(f.Name)
-			cmd.Flags().Set(f.Name, fmt.Sprintf("%v", val))
+			_ = cmd.Flags().Set(f.Name, fmt.Sprintf("%v", val))
 		}
 	})
 }

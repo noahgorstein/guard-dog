@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	"github.com/charmbracelet/lipgloss"
+	"github.com/noahgorstein/go-stardog/stardog"
 )
 
 func (b *Bubble) generateView() string {
@@ -33,8 +34,21 @@ func (b *Bubble) generateView() string {
 	}
 
 	sb.WriteRune('\n')
-	sb.WriteString(fmt.Sprintf("%s %s\n", b.Styles.selectionTextStyle.Render("Action:"), b.Styles.normalTextStyle.Render(b.actionSelector.GetSelected())))
-	sb.WriteString(fmt.Sprintf("%s %s\n", b.Styles.selectionTextStyle.Render("Resource Type:"), b.Styles.normalTextStyle.Render(b.resourceTypeSelector.GetSelected())))
+
+	currPermissionAction := ""
+	a, ok := b.actionSelector.GetSelected().(stardog.PermissionAction)
+	if ok {
+		currPermissionAction = a.String()
+	}
+	sb.WriteString(fmt.Sprintf("%s %s\n", b.Styles.selectionTextStyle.Render("Action:"), b.Styles.normalTextStyle.Render(currPermissionAction)))
+
+	currPermissionResouceType := ""
+	r, ok := b.resourceTypeSelector.GetSelected().(stardog.PermissionResourceType)
+	if ok {
+		currPermissionResouceType = r.String()
+	}
+	sb.WriteString(fmt.Sprintf("%s %s\n", b.Styles.selectionTextStyle.Render("Resource Type:"), b.Styles.normalTextStyle.Render(currPermissionResouceType)))
+
 	sb.WriteString(fmt.Sprintf("%s %s\n", b.Styles.selectionTextStyle.Render("Resource:"), b.Styles.normalTextStyle.Render(b.resourceInput.Value())))
 
 	switch b.State {

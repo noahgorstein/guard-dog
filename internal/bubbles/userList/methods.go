@@ -12,13 +12,13 @@ import (
 
 func (b *Bubble) GetStardogUsersWithDetails() ([]list.Item, error) {
 	var items []list.Item
-	userList, err := b.stardogClient.Security.ListUsers(context.Background())
+	userList, _, err := b.stardogClient.User.ListNames(context.Background())
 	if err != nil {
 		return nil, err
 	}
 	for _, user := range userList {
 
-		userDetails, _ := b.stardogClient.Security.GetUserDetails(context.Background(), user)
+		userDetails, _, _ := b.stardogClient.User.Get(context.Background(), user)
 		items = append(items,
 			Item{
 				title:     user,

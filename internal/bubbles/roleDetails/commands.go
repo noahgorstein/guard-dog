@@ -30,23 +30,23 @@ var (
 	darkBlue = lipgloss.NewStyle().Bold(true).Foreground(nord9)
 )
 
-func getRowStyle(action string) lipgloss.Style {
+func getRowStyle(action stardog.PermissionAction) lipgloss.Style {
 	switch action {
-	case "ALL":
+	case stardog.PermissionActionAll:
 		return red
-	case "READ":
+	case stardog.PermissionActionRead:
 		return orange
-	case "WRITE":
+	case stardog.PermissionActionWrite:
 		return yellow
-	case "CREATE":
+	case stardog.PermissionActionCreate:
 		return green
-	case "DELETE":
+	case stardog.PermissionActionDelete:
 		return teal
-	case "EXECUTE":
+	case stardog.PermissionActionExecute:
 		return blue
-	case "GRANT":
+	case stardog.PermissionActionGrant:
 		return purple
-	case "REVOKE":
+	case stardog.PermissionActionRevoke:
 		return darkBlue
 	default:
 		return lipgloss.NewStyle()
@@ -61,13 +61,13 @@ type GetRoleDetailsMsg struct {
 func (b *Bubble) GetRoleDetailsCmd() tea.Cmd {
 	return func() tea.Msg {
 		rows := []table.Row{}
-		rolePermissions, err := b.stardogClient.Security.GetRolePermissions(context.Background(), b.selectedRole)
+		rolePermissions, _, err := b.stardogClient.Role.Permissions(context.Background(), b.selectedRole)
 		if err != nil {
 			return errMsg{
 				err: err,
 			}
 		}
-		usersWithRole, err := b.stardogClient.Security.ListUsersAssignedToRole(context.Background(), b.selectedRole)
+		usersWithRole, _, err := b.stardogClient.User.ListNamesAssignedRole(context.Background(), b.selectedRole)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -94,12 +94,17 @@ func (b *Bubble) DeleteRolePermissionCmd() tea.Cmd {
 	return func() tea.Msg {
 
 		row := b.permissionsTable.HighlightedRow()
-		permission := stardog.NewPermission(
-			row.Data[b.permissionTableColumnKeys.action].(string),
-			row.Data[b.permissionTableColumnKeys.resourceType].(string),
-			[]string{row.Data[b.permissionTableColumnKeys.resource].(string)})
+		permission := &stardog.Permission{
+			Action:       row.Data[b.permissionTableColumnKeys.action].(stardog.PermissionAction),
+			ResourceType: row.Data[b.permissionTableColumnKeys.resourceType].(stardog.PermissionResourceType),
+			Resource:     []string{row.Data[b.permissionTableColumnKeys.resource].(string)},
+		}
+		// permission := stardog.NewPermission(
+		// 	row.Data[b.permissionTableColumnKeys.action].(string),
+		// 	row.Data[b.permissionTableColumnKeys.resourceType].(string),
+		// 	[]string{row.Data[b.permissionTableColumnKeys.resource].(string)})
 
-		_, err := b.stardogClient.Security.RevokeRolePermission(context.Background(), b.selectedRole, *permission)
+		_, err := b.stardogClient.Role.RevokePermission(context.Background(), b.selectedRole, *permission)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -115,10 +120,9 @@ func (b *Bubble) DeleteRolePermissionCmd() tea.Cmd {
 	}
 }
 
-func (b *Bubble) CreateRolePermissionCmd(action string, resourceType string, resource []string) tea.Cmd {
+func (b *Bubble) CreateRolePermissionCmd(p stardog.Permission) tea.Cmd {
 	return func() tea.Msg {
-		permission := stardog.NewPermission(action, resourceType, resource)
-		_, err := b.stardogClient.Security.GrantRolePermission(context.Background(), b.selectedRole, *permission)
+		_, err := b.stardogClient.Role.GrantPermission(context.Background(), b.selectedRole, p)
 		if err != nil {
 			return errMsg{
 				err: err,
@@ -126,9 +130,9 @@ func (b *Bubble) CreateRolePermissionCmd(action string, resourceType string, res
 		}
 		return SuccessMsg{
 			Message: fmt.Sprintf("Successfully added permission: [%s] [%s] [%s] to role: %s",
-				permission.Action,
-				permission.ResourceType,
-				strings.Join(permission.Resource, "\\"),
+				p.Action,
+				p.ResourceType,
+				strings.Join(p.Resource, "\\"),
 				b.selectedRole),
 		}
 	}

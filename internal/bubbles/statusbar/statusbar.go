@@ -21,12 +21,14 @@ var logo = fmt.Sprintf("%s%s%s",
 	lipgloss.NewStyle().Foreground(nord12).Bold(true).Render("DOG"))
 
 type Bubble struct {
-	mode          mode.ActiveMode
-	stardogClient stardog.Client
-	width         int
-	help          help.Model
-	keys          KeyMap
-	Styles        Styles
+	mode                  mode.ActiveMode
+	stardogClient         stardog.Client
+	width                 int
+	help                  help.Model
+	keys                  KeyMap
+	Styles                Styles
+	loggedInUser          string
+	stardogServerEndpoint string
 
 	StatusMessageLifetime time.Duration
 
@@ -34,7 +36,7 @@ type Bubble struct {
 	statusMessageTimer *time.Timer
 }
 
-func New(stardogClient stardog.Client) Bubble {
+func New(stardogClient stardog.Client, loggedInUser, serverEndpoint string) Bubble {
 	styles := DefaultStyles()
 	help := help.NewModel()
 	help.Styles.ShortKey = styles.HelpKeyStyle
@@ -42,11 +44,13 @@ func New(stardogClient stardog.Client) Bubble {
 	help.Styles.ShortSeparator = styles.HelpTextStyle
 
 	return Bubble{
-		stardogClient: stardogClient,
-		Styles:        styles,
-		help:          help,
-		keys:          Keys,
-		statusMessage: lipgloss.NewStyle().Bold(true).Render(""),
+		stardogClient:         stardogClient,
+		Styles:                styles,
+		help:                  help,
+		keys:                  Keys,
+		statusMessage:         lipgloss.NewStyle().Bold(true).Render(""),
+		loggedInUser:          loggedInUser,
+		stardogServerEndpoint: serverEndpoint,
 	}
 }
 
@@ -135,7 +139,8 @@ func (b Bubble) View() string {
 	endpoint := lipgloss.NewStyle().
 		Align(lipgloss.Right).
 		Width(int(float64(b.width) * 0.5)).
-		Render(b.Styles.EndpointStyle.Render(b.stardogClient.Username + "@" + b.stardogClient.BaseURL))
+		Render(b.Styles.EndpointStyle.Render(
+			fmt.Sprintf("%s@%s", b.loggedInUser, b.stardogServerEndpoint)))
 
 	return b.Styles.StatusBarStyle.Render(
 		lipgloss.JoinVertical(lipgloss.Left,

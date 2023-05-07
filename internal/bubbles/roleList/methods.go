@@ -11,9 +11,9 @@ import (
 
 func (b *Bubble) GetRoles() []list.Item {
 	var items []list.Item
-	roleList, _ := b.stardogClient.Security.ListRoles(context.Background())
+	roleList, _, _ := b.stardogClient.Role.ListNames(context.Background())
 	for _, role := range roleList {
-		usersAssignedToRole, _ := b.stardogClient.Security.ListUsersAssignedToRole(context.Background(), role)
+		usersAssignedToRole, _, _ := b.stardogClient.User.ListNamesAssignedRole(context.Background(), role)
 		desc := ""
 		if len(usersAssignedToRole) == 1 {
 			desc = fmt.Sprintf("%d user with role", len(usersAssignedToRole))
